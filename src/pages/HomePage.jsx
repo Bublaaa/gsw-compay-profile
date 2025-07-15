@@ -2,9 +2,8 @@ import HeroSection from "../sections/HeroSection";
 
 const HomePage = ({}) => {
   return (
-    <div className="w-full flex flex-col items-center justify-center text-center">
+    <div className="w-full h-screen flex flex-col ">
       <HeroSection />
-      <h1 className="text-4xl">Home Page</h1>
     </div>
   );
 };
