@@ -6,12 +6,12 @@ const HeroSection = () => {
   return (
     // bg-center bg-no-repeat  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-blend-multiply
     <section
-      className="relative bg-dark-hover w-full h-full flex justify-center items-center bg-center bg-cover bg-no-repeat bg-blend-multiply"
+      className="bg-dark-hover w-full h-full pt-30 flex bg-center bg-cover bg-no-repeat bg-blend-multiply justify-center"
       style={{
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row gap-5 md:gap-20 px-4 py-24 lg:py-36 items-end max-w-screen-xl w-full">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-20 px-4 py-24 lg:py-36 items-end max-w-screen-xl w-full ">
         {/* Left Content */}
         <div className="relative md:block hidden w-full lg:w-1/2 flex justify-right items-end mt-12 lg:mt-0">
           {/* Image */}
@@ -54,10 +54,8 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col w-full lg:w-1/2 gap-5">
-          <h1 className="text-lg font-semibold text-accent md:text-xl">
-            Professional Security Services
-          </h1>
-          <h2 className="text-xl md:text-3xl font-semibold text-gray-600 dark:text-white">
+          <h4 className="text-accent">Professional Security Services</h4>
+          <h2 className="text-gray-300">
             A professional security service provider with extensive experience,
             and deep expertise in the industrial security sector
           </h2>
