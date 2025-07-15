@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import * as LucideIcons from "lucide-react";
+import logo from "../assets/logo.webp";
 
 const Navbar = ({ links }) => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Theme state from localStorage
   const [theme, setTheme] = useState(() =>
     localStorage.getItem("theme") === "dark" ? "dark" : "light"
   );
 
-  // Apply theme to <html> tag
   useEffect(() => {
     const root = window.document.documentElement;
     if (theme === "dark") {
@@ -27,38 +26,21 @@ const Navbar = ({ links }) => {
   };
 
   return (
-    <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <nav className="border-gray-200 bg-white dark:bg-dark dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+          <img src={logo} className="h-8" alt="gsw-logo" />
+          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-accent">
+            Garda Setia Waspada
           </span>
         </Link>
 
         {/* Right Actions */}
         <div className="flex items-center space-x-4">
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full p-2 focus:outline-none"
-            title="Toggle theme"
-          >
-            {theme === "dark" ? (
-              <LucideIcons.Sun size={20} />
-            ) : (
-              <LucideIcons.Moon size={20} />
-            )}
-          </button>
-
           {/* Mobile Menu Button */}
           <button
             type="button"
@@ -77,17 +59,17 @@ const Navbar = ({ links }) => {
           } w-full md:block md:w-auto`}
           id="navbar-hamburger"
         >
-          <ul className="flex flex-col md:flex-row font-medium mt-4 md:mt-0 rounded-lg bg-gray-50 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent">
+          <ul className="flex flex-col md:flex-row  mt-4 md:mt-0 rounded-lg bg-transparent md:dark:bg-transparent">
             {links.map((link) => {
               const isActive = location.pathname === link.href;
               return (
                 <li key={link.label}>
                   <Link
                     to={link.href}
-                    className={`block py-2 px-3 rounded-md ${
+                    className={`block py-2 px-3 rounded-md font-regular ${
                       isActive
-                        ? "text-white bg-blue-700 dark:bg-blue-600"
-                        : "text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                        ? "text-accent dark:text-white font-semibold"
+                        : "text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                     }`}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -96,6 +78,17 @@ const Navbar = ({ links }) => {
                 </li>
               );
             })}
+            <button
+              onClick={toggleTheme}
+              className="hidden md:block text-gray-500 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full p-2 focus:outline-none"
+              title="Toggle theme"
+            >
+              {theme === "dark" ? (
+                <LucideIcons.Sun size={20} />
+              ) : (
+                <LucideIcons.Moon size={20} />
+              )}
+            </button>
           </ul>
         </div>
       </div>

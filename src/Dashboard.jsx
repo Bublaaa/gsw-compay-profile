@@ -9,7 +9,7 @@ const Dashboard = () => {
         <Navbar links={NavLinks} />
       </div>
       {/* CONTENT */}
-      <div className="flex justify-center items-end w-full h-full overflow-y-auto scrollbar-hidden pb-10">
+      <div className="flex justify-center w-full h-full overflow-y-auto scrollbar-hidden">
         <Outlet />
       </div>
     </div>

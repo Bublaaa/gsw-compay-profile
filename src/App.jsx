@@ -4,6 +4,11 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Loader } from "lucide-react";
 import Dashboard from "./Dashboard.jsx";
 
+const HomePage = lazy(() => import("./pages/HomePage.jsx"));
+const AboutUsPage = lazy(() => import("./pages/AboutUsPage.jsx"));
+const OurServicePage = lazy(() => import("./pages/OurServicePage.jsx"));
+const PortofolioPage = lazy(() => import("./pages/PortofolioPage.jsx"));
+
 function App() {
   return (
     <div className="h-screen w-full bg-white-shadow flex items-center justify-center overflow-hidden">
@@ -18,39 +23,39 @@ function App() {
             </Suspense>
           }
         >
-          {/* <Route index element={<Navigate to="overview" replace />} />
+          {/* <Route index element={<Navigate to="/" replace />} /> */}
           <Route
-            path="overview"
+            path="/"
             element={
               <Suspense>
-                <Home />
+                <HomePage />
               </Suspense>
             }
           />
           <Route
-            path="clock-in"
+            path="about-us"
             element={
               <Suspense>
-                <ClockInPage />
+                <AboutUsPage />
               </Suspense>
             }
           />
           <Route
-            path="clock-out"
+            path="portfolio"
             element={
               <Suspense>
-                <ClockOutPage />
+                <PortofolioPage />
               </Suspense>
             }
           />
           <Route
-            path="schedules"
+            path="our-service"
             element={
               <Suspense>
-                <SchedulesSecurityPage />
+                <OurServicePage />
               </Suspense>
             }
-          /> */}
+          />
         </Route>
 
         {/* <Route
