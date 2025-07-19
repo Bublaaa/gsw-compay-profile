@@ -26,7 +26,7 @@ const Navbar = ({ links }) => {
   };
 
   return (
-    <nav className="border-gray-200 bg-white dark:bg-dark dark:border-gray-700">
+    <nav className="bg-dark/50 backdrop-blur-md fixed top-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <Link
@@ -45,7 +45,7 @@ const Navbar = ({ links }) => {
           <button
             type="button"
             onClick={() => setIsMenuOpen((prev) => !prev)}
-            className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm  rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 text-gray-400"
           >
             <span className="sr-only">Open main menu</span>
             <LucideIcons.Menu className="w-5 h-5" />
@@ -66,10 +66,10 @@ const Navbar = ({ links }) => {
                 <li key={link.label}>
                   <Link
                     to={link.href}
-                    className={`block py-2 px-3 rounded-md font-regular ${
+                    className={`block py-2 px-3 rounded-md ${
                       isActive
-                        ? "text-accent dark:text-white font-semibold"
-                        : "text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                        ? "text-accent font-semibold"
+                        : "text-gray-300 font-regular hover:text-white"
                     }`}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -78,7 +78,7 @@ const Navbar = ({ links }) => {
                 </li>
               );
             })}
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="hidden md:block text-gray-500 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full p-2 focus:outline-none"
               title="Toggle theme"
@@ -88,7 +88,7 @@ const Navbar = ({ links }) => {
               ) : (
                 <LucideIcons.Moon size={20} />
               )}
-            </button>
+            </button> */}
           </ul>
         </div>
       </div>

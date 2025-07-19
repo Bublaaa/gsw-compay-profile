@@ -15,9 +15,7 @@ const FooterSection = ({ footerData }) => {
                 </h6>
               </div>
               <div>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
-                  {footerData.address}
-                </p>
+                <p className="text-sm text-white">{footerData.address}</p>
               </div>
             </div>
 
@@ -25,25 +23,25 @@ const FooterSection = ({ footerData }) => {
             <div className="w-full space-y-2 md:pl-50">
               <a
                 href={footerData.phoneLink}
-                className="block text-sm text-gray-900 dark:text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
               >
                 {footerData.phoneNumber}
               </a>
               <a
                 href={footerData.businessEmailLink}
-                className="block text-sm text-gray-900 dark:text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
               >
                 {footerData.businessEmail}
               </a>
               <a
                 href="https://www.larosmulti.id"
-                className="block text-sm text-gray-900 dark:text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
               >
                 www.garda-setia-waspada.id
               </a>
               <a
                 href="mailto:support@laros-epcc.com"
-                className="block text-sm text-gray-900 dark:text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
               >
                 support@gsw.com
               </a>

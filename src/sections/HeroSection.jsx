@@ -6,25 +6,22 @@ const HeroSection = () => {
   return (
     // bg-center bg-no-repeat  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-blend-multiply
     <section
-      className="bg-dark-hover w-full h-full pt-30 flex bg-center bg-cover bg-no-repeat bg-blend-multiply justify-center"
+      className="bg-dark-hover bg-center bg-cover bg-no-repeat bg-blend-multiply w-full h-screen flex justify-center"
       style={{
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row gap-5 md:gap-20 px-4 py-24 lg:py-36 items-end max-w-screen-xl w-full ">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full py-60">
+        {" "}
         {/* Left Content */}
-        <div className="relative md:block hidden w-full lg:w-1/2 flex justify-right items-end mt-12 lg:mt-0">
-          {/* Image */}
+        <div className="relative hidden md:flex w-full lg:w-1/2 h-full justify-end items-end">
           <img
             src={securityImages}
             alt="security-guard"
-            className="h-1/2 w-auto grayscale z-10 ml-auto"
+            className="h-auto max-h-[60vh] w-auto grayscale z-10 ml-auto"
           />
-
-          {/* Positioned Overlay */}
           <div className="absolute bottom-0 right-0 z-20 p-4 sm:p-6 bg-accent rounded-lg shadow-lg">
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* Feature 1 */}
               <div className="flex items-start gap-2">
                 <LucideIcons.ShieldCheck className="w-8 h-8 text-white" />
                 <div>
@@ -36,8 +33,6 @@ const HeroSection = () => {
                   </p>
                 </div>
               </div>
-
-              {/* Feature 2 */}
               <div className="flex items-start gap-2">
                 <LucideIcons.Gauge className="w-8 h-8 text-white" />
                 <div>
@@ -52,15 +47,17 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col w-full lg:w-1/2 gap-5">
-          <h4 className="text-accent">Professional Security Services</h4>
-          <h2 className="text-gray-300">
+        {/* Right Content */}
+        <div className="flex flex-col w-full lg:w-1/2  h-full gap-4 text-white justify-end items-start">
+          <h4 className="text-accent text-sm uppercase">Garda Setia Waspada</h4>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-100">
+            Professional Security Services
+          </h2>
+          <p className="text-gray-300">
             A professional security service provider with extensive experience,
             and deep expertise in the industrial security sector
-          </h2>
-
-          <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
+          </p>
+          <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mt-4">
             <a
               href="#"
               className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-red-100 dark:focus:ring-red-950"
@@ -70,8 +67,6 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-
-        {/* Right Content with Image & Overlay */}
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ const Dashboard = () => {
         <Navbar links={NavLinks} />
       </div>
       {/* CONTENT */}
-      <div className="flex flex-col justify-center w-full h-full overflow-y-auto scrollbar-hidden">
+      <div className="flex flex-col justify-center w-screen h-full overflow-y-auto scrollbar-hidden">
         <Outlet />
       </div>
       <WhatsAppButton />

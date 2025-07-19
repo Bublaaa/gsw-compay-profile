@@ -55,7 +55,7 @@
   }
 
   p {
-    @apply md:text-base text-sm text-gray-500;
+    @apply md:text-base text-sm text-gray-400;
   }
 
   a {

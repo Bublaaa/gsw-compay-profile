@@ -1,4 +1,4 @@
-import * as LucideIcon from "lucide-react";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const testimonies = [
@@ -31,7 +31,7 @@ const TestimonySection = () => {
     );
 
   useEffect(() => {
-    const interval = setInterval(() => nextItem(), 5000);
+    const interval = setInterval(nextItem, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -43,56 +43,56 @@ const TestimonySection = () => {
   }, [currentIndex]);
 
   return (
-    <section className="flex bg-white-shadow w-full h-full ">
-      <div className="relative flex max-w-screen-xl w-full py-24 lg:py-36 items-center justify-center mx-auto">
-        <div
-          ref={trackRef}
-          className="flex transition-transform duration-700 ease-in-out"
-        >
-          {testimonies.map((t, i) => (
-            <div
-              key={i}
-              className="carousel-item min-w-full flex justify-center px-4 md:px-8 lg:px-16 "
-            >
-              <figure className="text-center max-w-3xl py-10 px-40 rounded-lg bg-white">
-                <LucideIcon.Quote className="w-10 h-10 mx-auto mb-3 text-gray-400" />
-                {/* <svg
-                  className="w-10 h-10 mx-auto mb-3 text-gray-400 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 14"
-                >
-                  <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                </svg> */}
-                <blockquote className="italic text-lg text-dark ">
-                  {t.message}
-                </blockquote>
-                <figcaption className="mt-6 font-semibold text-accent">
-                  {t.client}
-                </figcaption>
-              </figure>
-            </div>
-          ))}
+    <section className="w-full bg-white-shadow h-screen">
+      <div className="flex flex-col items-center justify-center gap-10 py-40">
+        <div className="flex flex-col gap-5 md:px-30 text-center">
+          <h4 className="text-accent">What Our Clients Say</h4>
+          <h2 className="text-dark">
+            Trusted by Industry Leaders Across Sectors
+          </h2>
         </div>
+        <div className="relative max-w-screen-xl w-full overflow-hidden h-full flex items-center justify-center px-4 md:px-8">
+          {/* Carousel Track */}
+          <div
+            ref={trackRef}
+            className="flex transition-transform duration-700 ease-in-out w-full"
+          >
+            {testimonies.map((t, i) => (
+              <div
+                key={i}
+                className="min-w-full flex items-center justify-center px-4 md:px-8"
+              >
+                <figure className="p-8 max-w-4xl w-full text-center">
+                  <Quote className="w-10 h-10 text-gray-400 mx-auto mb-4" />
+                  <blockquote className="italic text-2xl text-dark">
+                    {t.message}
+                  </blockquote>
+                  <figcaption className="mt-6 font-semibold text-accent">
+                    {t.client}
+                  </figcaption>
+                </figure>
+              </div>
+            ))}
+          </div>
 
-        {/* Controls */}
-        <button
-          onClick={prevItem}
-          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group"
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30  hover:bg-gray-700 ">
-            <LucideIcon.ChevronLeft className="w-4 h-5 text-accent" />
-          </span>
-        </button>
-
-        <button
-          onClick={nextItem}
-          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group"
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 hover:bg-gray-700  ">
-            <LucideIcon.ChevronRight className="w-4 h-5 text-accent" />
-          </span>
-        </button>
+          {/* Controls */}
+          <button
+            onClick={prevItem}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-30 p-2"
+          >
+            <span className="w-10 h-10 rounded-full bg-gray-800/10 hover:bg-gray-700/30 flex items-center justify-center">
+              <ChevronLeft className="w-5 h-5 text-accent" />
+            </span>
+          </button>
+          <button
+            onClick={nextItem}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-30 p-2"
+          >
+            <span className="w-10 h-10 rounded-full bg-gray-800/10 hover:bg-gray-700/30 flex items-center justify-center">
+              <ChevronRight className="w-5 h-5 text-accent" />
+            </span>
+          </button>
+        </div>
       </div>
     </section>
   );
