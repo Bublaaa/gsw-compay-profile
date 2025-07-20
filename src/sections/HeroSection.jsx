@@ -6,15 +6,16 @@ const HeroSection = () => {
   return (
     // bg-center bg-no-repeat  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-blend-multiply
     <section
-      className="bg-dark-hover bg-center bg-cover bg-no-repeat bg-blend-multiply w-full h-screen flex justify-center"
+      id="home"
+      className="bg-dark-hover bg-center bg-cover bg-no-repeat bg-blend-multiply w-full h-full flex justify-center"
       style={{
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full py-60">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full md:py-60 py-20">
         {" "}
         {/* Left Content */}
-        <div className="relative hidden md:flex w-full lg:w-1/2 h-full justify-end items-end">
+        <div className="md:order-1 order-2 relative flex w-full lg:w-1/2 h-full justify-end items-end">
           <img
             src={securityImages}
             alt="security-guard"
@@ -48,7 +49,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Right Content */}
-        <div className="flex flex-col w-full lg:w-1/2  h-full gap-4 text-white justify-end items-start">
+        <div className="md:order-2 order-1 flex flex-col w-full lg:w-1/2  h-full gap-4 text-white justify-end items-start">
           <h4 className="text-accent text-sm uppercase">Garda Setia Waspada</h4>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-100">
             Professional Security Services

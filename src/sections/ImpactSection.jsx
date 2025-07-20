@@ -24,6 +24,7 @@ const ImpactSection = () => {
 
   return (
     <section
+      id="our-impact"
       ref={ref}
       className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
     >

@@ -1,36 +1,20 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 import * as LucideIcons from "lucide-react";
 import logo from "../assets/logo.webp";
 
 const Navbar = ({ links }) => {
-  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const [theme, setTheme] = useState(() =>
-    localStorage.getItem("theme") === "dark" ? "dark" : "light"
-  );
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
 
   return (
     <nav className="bg-dark/50 backdrop-blur-md fixed top-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <Link
-          to="/"
+          smooth={true}
+          duration={500}
+          to="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={logo} className="h-8" alt="gsw-logo" />
@@ -78,17 +62,6 @@ const Navbar = ({ links }) => {
                 </li>
               );
             })}
-            {/* <button
-              onClick={toggleTheme}
-              className="hidden md:block text-gray-500 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full p-2 focus:outline-none"
-              title="Toggle theme"
-            >
-              {theme === "dark" ? (
-                <LucideIcons.Sun size={20} />
-              ) : (
-                <LucideIcons.Moon size={20} />
-              )}
-            </button> */}
           </ul>
         </div>
       </div>

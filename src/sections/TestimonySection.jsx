@@ -43,9 +43,9 @@ const TestimonySection = () => {
   }, [currentIndex]);
 
   return (
-    <section className="w-full bg-white-shadow h-screen">
-      <div className="flex flex-col items-center justify-center gap-10 py-40">
-        <div className="flex flex-col gap-5 md:px-30 text-center">
+    <section id="testimony" className="w-full bg-white-shadow h-full">
+      <div className="flex flex-col items-center justify-center md:gap-10 gap-5 md:py-40 py-10">
+        <div className="flex flex-col gap-5 md:px-30 text-center h-full">
           <h4 className="text-accent">What Our Clients Say</h4>
           <h2 className="text-dark">
             Trusted by Industry Leaders Across Sectors
@@ -64,7 +64,7 @@ const TestimonySection = () => {
               >
                 <figure className="p-8 max-w-4xl w-full text-center">
                   <Quote className="w-10 h-10 text-gray-400 mx-auto mb-4" />
-                  <blockquote className="italic text-2xl text-dark">
+                  <blockquote className="italic md:text-2xl text-lg text-dark">
                     {t.message}
                   </blockquote>
                   <figcaption className="mt-6 font-semibold text-accent">
