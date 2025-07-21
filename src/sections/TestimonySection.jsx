@@ -43,7 +43,7 @@ const TestimonySection = () => {
   }, [currentIndex]);
 
   return (
-    <section id="testimony" className="w-full bg-white-shadow h-full">
+    <section id="testimony" className="w-full bg-white h-full">
       <div className="flex flex-col items-center justify-center md:gap-10 gap-5 md:py-40 py-10">
         <div className="flex flex-col gap-5 md:px-30 text-center h-full">
           <h4 className="text-accent">What Our Clients Say</h4>

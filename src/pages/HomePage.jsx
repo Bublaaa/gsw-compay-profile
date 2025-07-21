@@ -4,6 +4,7 @@ import TestimonySection from "../sections/TestimonySection";
 import FooterSection from "../sections/FooterSection";
 import ImpactSection from "../sections/ImpactSection";
 import OurClientsSection from "../sections/OurClientsSection";
+import RecentPortofolioSection from "../sections/RecentPortofolioSection";
 
 const footerData = {
   address:
@@ -18,6 +19,7 @@ const HomePage = ({}) => {
     <div className="w-full h-full flex flex-col ">
       <HeroSection />
       <OurServiceSection />
+      <RecentPortofolioSection />
       <ImpactSection />
       <TestimonySection />
       <OurClientsSection />

@@ -32,7 +32,10 @@ const serviceData = [
 
 const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "0px 0px -100px 0px",
+  });
 
   return (
     <motion.div
@@ -51,7 +54,7 @@ const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
       </div>
 
       <div className="z-20 h-2/3 text-center space-y-4 items-center justify-center mt-[-40px] pb-10 px-5">
-        <div className=" p-5 w-fit bg-dark rounded-full shadow-md mx-auto">
+        <div className=" p-5 w-fit bg-white-shadow rounded-full shadow-md mx-auto">
           {Icon && <Icon className="text-accent  w-10 h-10" />}
         </div>
         <h2 className="text-dark text-xl font-semibold">{title}</h2>

@@ -28,7 +28,7 @@ const ImpactSection = () => {
       ref={ref}
       className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
     >
-      <div className="flex flex-col gap-5 mx-auto text-center items-center py-24 lg:py-56 px-4">
+      <div className="flex flex-col gap-5 mx-auto text-center items-center py-16 lg:py-20 px-4">
         <div className="flex flex-col gap-3 items-center text-center">
           <h2 className="text-accent">Our Impact in Numbers</h2>
           <h6 className="text-white">
