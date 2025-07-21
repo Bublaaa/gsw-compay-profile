@@ -45,7 +45,6 @@ const Navbar = ({ links }) => {
                 <li key={link.id}>
                   <a
                     href={link.href}
-                    onClick={console.log(link.href)}
                     className={`block py-2 px-3 text-sm rounded-md ${
                       isActive
                         ? "text-accent font-semibold"

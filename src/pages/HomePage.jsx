@@ -3,6 +3,7 @@ import OurServiceSection from "../sections/OurServiceSection";
 import TestimonySection from "../sections/TestimonySection";
 import FooterSection from "../sections/FooterSection";
 import ImpactSection from "../sections/ImpactSection";
+import OurClientsSection from "../sections/OurClientsSection";
 
 const footerData = {
   address:
@@ -19,6 +20,7 @@ const HomePage = ({}) => {
       <OurServiceSection />
       <ImpactSection />
       <TestimonySection />
+      <OurClientsSection />
       <FooterSection footerData={footerData} />
     </div>
   );
