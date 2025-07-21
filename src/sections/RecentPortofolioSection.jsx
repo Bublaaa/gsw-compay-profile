@@ -31,7 +31,7 @@ const PortofolioCard = ({ index, title, date, kind, image, description }) => {
         className="rounded-md"
       />
       <div className="flex flex-row w-full justify-between items-center mt-4">
-        <div className="text-accent px-7 py-2 bg-accent/10 rounded-full capitalize text-sm font-semibold">
+        <div className="text-accent px-5 py-2 bg-accent/10 rounded-full capitalize text-sm font-semibold">
           <h6>{kind}</h6>
         </div>
         <h6 className="text-sm text-gray-500">{date}</h6>
@@ -51,8 +51,8 @@ const RecentPortofolioSection = () => {
   return (
     <section id="recent-portofolio" className="bg-white w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">
-        <div className="flex md:flex-row flex-col justify-between gap-5 md:items-end items-start">
-          <div className="flex flex-col gap-5 md:px-30">
+        <div className="flex md:flex-row flex-col justify-between gap-5 md:items-end items-start md:px-30">
+          <div className="flex flex-col gap-5">
             <h4 className="text-accent">Our Portfolio</h4>
             <h2 className="text-dark text-3xl font-bold">Our Latest Work</h2>
             <p className="text-gray-600 max-w-2xl">
@@ -73,7 +73,7 @@ const RecentPortofolioSection = () => {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 w-full md:px-30">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full md:px-30">
           {recentItems.map((item, index) => (
             <PortofolioCard
               key={index}
