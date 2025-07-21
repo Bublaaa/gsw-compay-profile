@@ -12,7 +12,7 @@ const HeroSection = () => {
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full md:py-60 py-20">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full md:py-60 py-30">
         {" "}
         {/* Left Content */}
         <div className="md:order-1 order-2 relative flex w-full lg:w-1/2 h-full justify-end items-end">

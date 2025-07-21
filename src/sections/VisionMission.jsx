@@ -1,4 +1,4 @@
-import React from "react";
+import { Lightbulb, Goal } from "lucide-react";
 
 const visionMissionSectionData = [
   {
@@ -32,16 +32,19 @@ const visionMissionSectionData = [
 const VisionMissionSection = () => {
   return (
     <section id="vision-mission-section" className="bg-white-shadow w-full">
-      <div className="flex flex-col gap-10 mx-auto w-full md:max-w-4xl md:py-20">
-        <div className="flex flex-col gap-2 items-center text-center">
+      <div className="flex flex-col gap-10 mx-auto w-full md:max-w-4xl md:py-40  py-20 px-5">
+        <div className="flex flex-col gap-2 w-full items-center text-center">
           <h5 className="w-full text-secondary dark:text-white heading5">
             Vision & Mission
           </h5>
           <h1 className="text-accent">"We Come, People Feel Safe."</h1>
         </div>
-        <div className="grid grid-cols-2 gap-5 md:gap-10 w-full">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-10 w-full">
           <div className="flex flex-col gap-5 bg-white rounded-lg shadow-md items-center px-10 py-10">
-            <h3 className="text-accent">Vision</h3>
+            <div className="flex flex-row gap-2 items-center justify-center">
+              <Lightbulb className="w-15 h-15 text-accent" />
+              <h3 className="text-accent">Vision</h3>
+            </div>
             <p>
               To be recognized as a leading provider of highly qualified
               security personnel, delivering exceptional human resource services
@@ -50,7 +53,10 @@ const VisionMissionSection = () => {
             </p>
           </div>
           <div className="flex flex-col gap-5 bg-white rounded-lg shadow-md items-center px-10 py-10">
-            <h3 className="text-accent">Mission</h3>
+            <div className="flex flex-row gap-2 items-center justify-center">
+              <Goal className="w-15 h-15 text-accent" />
+              <h3 className="text-accent">Mission</h3>
+            </div>
             <p>
               To be recognized as a leading provider of highly qualified
               security personnel, delivering exceptional human resource services

@@ -40,28 +40,24 @@ const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.1 + index * 0.5 }}
-      className="group relative flex flex-col w-full rounded-lg shadow-md overflow-hidden"
+      className="group relative flex flex-col w-full h-fit lg:h-full rounded-lg shadow-md overflow-hidden"
     >
-      <div className="h-1/3 w-full overflow-hidden">
+      <div className="h-1/4 bg-accent overflow-hidden">
         <img
           src={backgroundImage}
           alt={backgroundImage}
-          className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+          className="h-auto w-full object-cover transform transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 
-      <div className="absolute inset-0 bg-white opacity-50 z-0 pointer-events-none" />
-
-      <div className="relative z-20 text-center space-y-4 md:px-10 px-5 mt-[-50px]">
-        <div className="flex flex-row p-5 w-fit items-center justify-center bg-white rounded-full shadow-md mx-auto">
-          {Icon && <Icon className="text-accent md:w-15 md:h-15 w-10 h-10" />}
+      <div className="z-20 h-2/3 text-center space-y-4 items-center justify-center mt-[-40px] pb-10 px-5">
+        <div className=" p-5 w-fit bg-dark rounded-full shadow-md mx-auto">
+          {Icon && <Icon className="text-accent  w-10 h-10" />}
         </div>
-      </div>
-
-      <div className="relative z-10 text-center space-y-4 md:px-10 px-5 mb-[-50px]">
         <h2 className="text-dark text-xl font-semibold">{title}</h2>
         <p className="text-gray-700 text-sm px-2">{description}</p>
       </div>
+      <div className="absolute inset-0 bg-white opacity-50 z-10 pointer-events-none" />
     </motion.div>
   );
 };
@@ -83,7 +79,7 @@ const OurServiceSection = ({}) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-30">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-30">
           {serviceData.map((service, index) => (
             <ServiceCard
               key={index}

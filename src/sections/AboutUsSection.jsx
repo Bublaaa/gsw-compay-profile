@@ -3,22 +3,22 @@ import logo from "../assets/logo.webp";
 const AboutUsSection = () => {
   return (
     <section id="about-us-section" className="bg-white-shadow w-full">
-      <div className="flex flex-row md:max-w-screen-lg w-full md:py-40 py-10 px-5 md:px-30 items-start justify-center mx-auto md:gap-10 gap-5">
+      <div className="flex flex-col md:max-w-screen-lg w-full md:py-40 pt-20 px-5 md:px-30 items-start justify-center mx-auto gap-10">
         {/* Pictures */}
-        <div className="w-full md:w-1/3">
+        <div className="flex flex-row w-full items-center md:gap-10 gap-5">
           <img
-            className="h-auto md:h-80 w-full object-contain md:block hidden"
+            className="h-1/4 w-1/4 object-contain "
             src={logo}
             alt="GSW_Logo"
           />
-        </div>
-        {/* Headline */}
-        <div className="flex flex-col gap-10 w-full">
           <div className="flex flex-col gap-2">
             <h5 className="text-accent">About Us</h5>
             <h2>PT Garda Setia Waspada</h2>
             <h6>Innovating Technical Services for Industry Leaders</h6>
           </div>
+        </div>
+        {/* Headline */}
+        <div className="flex flex-col gap-10 w-full">
           <div className="grid grid-cols-1 gap-5">
             <p>
               Garda Setia Waspada is a professional security service provider
