@@ -11,17 +11,12 @@ const Navbar = ({ links }) => {
     <nav className="bg-dark/50 backdrop-blur-md fixed top-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <Link
-          smooth={true}
-          duration={500}
-          to="#home"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-8" alt="gsw-logo" />
-          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-accent">
+          <span className="self-center md:text-xl text-lg font-semibold whitespace-nowrap text-accent">
             Garda Setia Waspada
           </span>
-        </Link>
+        </div>
 
         {/* Right Actions */}
         <div className="flex items-center space-x-4">
@@ -43,14 +38,15 @@ const Navbar = ({ links }) => {
           } w-full md:block md:w-auto`}
           id="navbar-hamburger"
         >
-          <ul className="flex flex-col md:flex-row  mt-4 md:mt-0 rounded-lg bg-transparent md:dark:bg-transparent">
+          <ul className="flex flex-col md:flex-row  mt-4 md:mt-0 md:gap-5 rounded-lg bg-transparent md:dark:bg-transparent">
             {links.map((link) => {
               const isActive = location.pathname === link.href;
               return (
-                <li key={link.label}>
-                  <Link
-                    to={link.href}
-                    className={`block py-2 px-3 rounded-md ${
+                <li key={link.id}>
+                  <a
+                    href={link.href}
+                    onClick={console.log(link.href)}
+                    className={`block py-2 px-3 text-sm rounded-md ${
                       isActive
                         ? "text-accent font-semibold"
                         : "text-gray-300 font-regular hover:text-white"
@@ -58,7 +54,7 @@ const Navbar = ({ links }) => {
                     aria-current={isActive ? "page" : undefined}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               );
             })}
