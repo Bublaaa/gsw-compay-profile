@@ -1,5 +1,20 @@
 import * as LucideIcons from "lucide-react";
 
+export const certificationList = [
+  { title: "ISO 9001" },
+  { title: "ISO 45000" },
+  { title: "ISO 14001" },
+  { title: "ABUJAPI" },
+  { title: "APSI" },
+  { title: "Gada Utama" },
+  { title: "APSI" },
+  { title: "Intelijen" },
+  { title: "HSSE" },
+  { title: "Risk Management" },
+  { title: "Fire Drill" },
+  { title: "First Aid" },
+];
+
 export const reasonData = [
   {
     title: "Fully Certified & Legally Compliant",
@@ -36,6 +51,17 @@ export const reasonData = [
     icon: "Handshake",
   },
 ];
+
+const CertificateCard = ({ title }) => {
+  return (
+    <div className="flex flex-col bg-white shadow-md text-white-shadow  p-2  rounded-lg">
+      <div className="flex flex-col h-full border border-2 border-white-shadow p-1 rounded-lg justify-between">
+        <LucideIcons.CircleCheckBig className="w-15 h-15 text-white-shadow" />
+        <h5 className="text-accent/100 text-end">{title}</h5>
+      </div>
+    </div>
+  );
+};
 
 const ReasonCard = ({ icon, title, description, index }) => {
   const IconComponent = LucideIcons[icon] || LucideIcons.HelpCircle;
@@ -80,6 +106,17 @@ const WhyChooseUsSection = () => {
               icon={reason.icon}
               index={index}
             />
+          ))}
+        </div>
+        <div className="text-start my-5">
+          <h2 className="text-accent text-2xl md:text-4xl font-bold">
+            Certifications
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-10 gap-5">
+          {certificationList.map((certification, index) => (
+            <CertificateCard key={index} title={certification.title} />
           ))}
         </div>
       </div>
