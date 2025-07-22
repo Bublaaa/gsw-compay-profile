@@ -38,7 +38,7 @@ const Navbar = ({ links }) => {
           } w-full md:block md:w-auto`}
           id="navbar-hamburger"
         >
-          <ul className="flex flex-col md:flex-row  mt-4 md:mt-0 md:gap-5 rounded-lg bg-transparent md:dark:bg-transparent">
+          <ul className="flex flex-col md:flex-row  mt-4 md:mt-0 md:gap-5 rounded-lg bg-transparent">
             {links.map((link) => {
               const isActive = location.pathname === link.href;
               return (

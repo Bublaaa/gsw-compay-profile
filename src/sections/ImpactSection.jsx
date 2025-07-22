@@ -42,7 +42,7 @@ const ImpactSection = () => {
               key={index}
               className="flex flex-col items-center text-center max-w-[200px]"
             >
-              <h1 className="heading1">
+              <h1>
                 {startCount ? (
                   <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
                 ) : (

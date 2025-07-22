@@ -23,25 +23,25 @@ const FooterSection = ({ footerData }) => {
             <div className="w-full space-y-2 md:pl-50">
               <a
                 href={footerData.phoneLink}
-                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent transition"
               >
                 {footerData.phoneNumber}
               </a>
               <a
                 href={footerData.businessEmailLink}
-                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent transition"
               >
                 {footerData.businessEmail}
               </a>
               <a
                 href="https://www.larosmulti.id"
-                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent transition"
               >
                 www.garda-setia-waspada.id
               </a>
               <a
                 href="mailto:support@laros-epcc.com"
-                className="block text-sm text-white hover:text-accent dark:hover:text-accent-hover transition"
+                className="block text-sm text-white hover:text-accent transition"
               >
                 support@gsw.com
               </a>
@@ -50,7 +50,7 @@ const FooterSection = ({ footerData }) => {
           </div>
 
           {/* Divider */}
-          <hr className="my-6 border-gray-200 dark:border-gray-700" />
+          <hr className="my-6 border-gray-200" />
 
           {/* Bottom copyright */}
           <div className="sm:flex sm:items-center sm:justify-between">

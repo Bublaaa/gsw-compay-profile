@@ -1,34 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import * as LucideIcons from "lucide-react";
-
-import securityService from "../assets/security-service.png";
-import administrativeService from "../assets/administration-service.png";
-import assistantService from "../assets/assistant-service.png";
-
-const serviceData = [
-  {
-    backgroundImage: securityService,
-    title: "Security Service",
-    description:
-      "We offer certified, well-trained security personnel who are fully prepared to serve in diverse industries and dynamic work environments with professionalism and readiness.",
-    Icon: LucideIcons.Shield,
-  },
-  {
-    backgroundImage: administrativeService,
-    title: "Administrative Officer Services",
-    description:
-      "Our administrative staff are courteous, detail-oriented, and trained to provide efficient support for day-to-day operations with professionalism and precision.",
-    Icon: LucideIcons.BookText,
-  },
-  {
-    backgroundImage: assistantService,
-    title: "Office Assistant Services",
-    description:
-      "We supply disciplined, trustworthy, and proactive office assistants who bring speed, responsibility, and a positive mindset to every task.",
-    Icon: LucideIcons.BrushCleaning,
-  },
-];
+import { fadeIn } from "../utils/motion";
+import { serviceData } from "../constants/ServiceData";
 
 const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
   const ref = useRef(null);
@@ -69,17 +42,37 @@ const OurServiceSection = ({}) => {
   return (
     <section id="our-service" className="bg-white-shadow w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">
-        <div className="flex flex-col gap-5 md:px-30">
-          <h4 className="text-accent">Our Service</h4>
-          <h2 className="text-dark">
+        <div className="flex flex-col md:px-30">
+          <motion.h4
+            variants={fadeIn("right", "spring", 0.1, 1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+            className="text-accent"
+          >
+            Our Service
+          </motion.h4>
+          <motion.h2
+            className="text-dark"
+            variants={fadeIn("right", "spring", 0.1, 1.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             We excel at delivering resources for your needs
-          </h2>
-          <p className="text-gray-600 max-w-2xl">
+          </motion.h2>
+          <motion.p
+            className="text-gray-600 max-w-2xl"
+            variants={fadeIn("right", "spring", 0.1, 1.3)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             At PT Garda Setia Waspada, we specialize in providing reliable,
             skilled, and well-trained personnel to support a wide range of
             operational needs — from security to administration — ensuring your
             business runs smoothly and securely.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-30">

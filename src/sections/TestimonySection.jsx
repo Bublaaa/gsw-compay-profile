@@ -1,23 +1,8 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-
-const testimonies = [
-  {
-    client: "Mining Sector Client",
-    message:
-      '"PT Garda Setia Waspada exceeded our expectations with their innovative solutions and seamless execution. A trusted partner for our critical projects."',
-  },
-  {
-    client: "Power Generation Client",
-    message:
-      '"Their technical expertise and attention to detail have been invaluable to our operations. We highly recommend PT Garda Setia Waspada for any industrial project."',
-  },
-  {
-    client: "Oil & Gas Sector Client",
-    message:
-      '"Professionalism, quality, and reliability define PT Garda Setia Waspada. We look forward to many more successful projects together."',
-  },
-];
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
+import { testimonies } from "../constants/TestimonyData";
 
 const TestimonySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,11 +30,25 @@ const TestimonySection = () => {
   return (
     <section id="testimony" className="w-full bg-white h-full">
       <div className="flex flex-col items-center justify-center md:gap-10 gap-5 md:py-40 py-10">
-        <div className="flex flex-col gap-5 md:px-30 text-center h-full">
-          <h4 className="text-accent">What Our Clients Say</h4>
-          <h2 className="text-dark">
+        <div className="flex flex-col md:px-30 text-center h-full">
+          <motion.h4
+            className="text-accent"
+            variants={fadeIn("up", "spring", 0.1, 1.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            What Our Clients Say
+          </motion.h4>
+          <motion.h2
+            className="text-dark"
+            variants={fadeIn("up", "spring", 0.1, 1.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             Trusted by Industry Leaders Across Sectors
-          </h2>
+          </motion.h2>
         </div>
         <div className="relative max-w-screen-xl w-full overflow-hidden h-full flex items-center justify-center px-4 md:px-8">
           {/* Carousel Track */}

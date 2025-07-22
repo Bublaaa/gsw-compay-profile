@@ -1,5 +1,7 @@
 import { portfolioData } from "../constants/PortofolioData";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import PortofolioCard from "../components/PortofolioCard";
 
 const RecentPortofolioSection = () => {
@@ -11,26 +13,52 @@ const RecentPortofolioSection = () => {
   return (
     <section id="recent-portofolio" className="bg-white w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">
-        <div className="flex md:flex-row flex-col justify-between gap-5 md:items-end items-start md:px-30">
-          <div className="flex flex-col gap-5">
-            <h4 className="text-accent">Our Portfolio</h4>
-            <h2 className="text-dark text-3xl font-bold">Our Latest Work</h2>
-            <p className="text-gray-600 max-w-2xl">
+        <div className="flex md:flex-row flex-col w-full justify-between gap-5 md:items-end items-start md:px-30">
+          <div className="flex flex-col">
+            <motion.h4
+              className="text-accent"
+              variants={fadeIn("right", "spring", 0.1, 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              Our Portfolio
+            </motion.h4>
+            <motion.h2
+              className="text-dark"
+              variants={fadeIn("right", "spring", 0.1, 1.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              Our Latest Work
+            </motion.h2>
+            <motion.p
+              className="max-w-2xl"
+              variants={fadeIn("right", "spring", 0.1, 1.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
               At PT. Garda Setia Waspada, we take pride in delivering skilled,
               disciplined personnel tailored to your operational needs. Our
               portfolio reflects our commitment to excellence through
               continuous, up-to-date training and professional
               development—ensuring every team we deploy is prepared, competent,
               and aligned with the latest industry standards.
-            </p>
+            </motion.p>
           </div>
-          <a
+          <motion.a
             href="/our-portfolio"
-            className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-red-100 dark:focus:ring-red-950"
+            className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-red-100"
+            variants={fadeIn("left", "spring", 0.1, 1.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
           >
             See Full Portfolio
             <MoveRight className="ml-3" />
-          </a>
+          </motion.a>
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full md:px-30">
