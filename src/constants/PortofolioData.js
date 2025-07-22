@@ -1,14 +1,22 @@
 export const portfolioData = [
   // === 2024 ===
   {
+    id: 1,
     date: "2024-06-12",
     name: "Advanced Workplace Security Training",
     description:
       "Hands-on training on emergency protocols and digital access systems for industrial clients.",
-    images: ["/assets/portfolio/2024/training1.png"],
+    images: [
+      "/assets/portfolio/2024/training1.png",
+      "/assets/portfolio/2024/training2.png",
+      "/assets/portfolio/2024/training3.png",
+      "/assets/portfolio/2024/training4.png",
+      "/assets/portfolio/2024/training5.png",
+    ],
     kind: "training",
   },
   {
+    id: 2,
     date: "2024-04-18",
     name: "Leadership & Crisis Management Seminar",
     description:
@@ -20,6 +28,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 3,
     date: "2024-02-22",
     name: "Corporate Security Awareness Seminar",
     description:
@@ -28,6 +37,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 4,
     date: "2024-01-15",
     name: "Incident Response Protocol Training",
     description:
@@ -38,6 +48,7 @@ export const portfolioData = [
 
   // === 2023 ===
   {
+    id: 5,
     date: "2023-10-10",
     name: "Mobile Patrol System Training",
     description:
@@ -46,6 +57,7 @@ export const portfolioData = [
     kind: "training",
   },
   {
+    id: 6,
     date: "2023-08-22",
     name: "Public Safety Seminar with Local Government",
     description:
@@ -54,6 +66,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 7,
     date: "2023-05-12",
     name: "Occupational Safety Seminar",
     description:
@@ -62,6 +75,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 8,
     date: "2023-03-18",
     name: "CCTV & Surveillance Management Training",
     description:
@@ -72,6 +86,7 @@ export const portfolioData = [
 
   // === 2022 ===
   {
+    id: 9,
     date: "2022-11-05",
     name: "Security Systems Integration Seminar",
     description:
@@ -80,6 +95,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 10,
     date: "2022-09-15",
     name: "Fire Safety & Evacuation Training",
     description:
@@ -88,6 +104,7 @@ export const portfolioData = [
     kind: "training",
   },
   {
+    id: 11,
     date: "2022-06-30",
     name: "Behavioral Analysis in Security Seminar",
     description:
@@ -96,6 +113,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 12,
     date: "2022-03-25",
     name: "Radio Communication & Command Training",
     description:
@@ -106,6 +124,7 @@ export const portfolioData = [
 
   // === 2021 ===
   {
+    id: 13,
     date: "2021-12-10",
     name: "Security Risk Assessment Training",
     description:
@@ -114,6 +133,7 @@ export const portfolioData = [
     kind: "training",
   },
   {
+    id: 14,
     date: "2021-10-08",
     name: "Community Safety Awareness Seminar",
     description:
@@ -122,6 +142,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 15,
     date: "2021-07-22",
     name: "Digital Surveillance Trends Seminar",
     description:
@@ -130,6 +151,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
+    id: 16,
     date: "2021-03-16",
     name: "First Aid & Emergency Response Training",
     description:

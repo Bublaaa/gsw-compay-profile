@@ -8,6 +8,9 @@ const HomePage = lazy(() => import("./pages/HomePage.jsx"));
 const AboutUsPage = lazy(() => import("./pages/AboutUsPage.jsx"));
 const OurServicePage = lazy(() => import("./pages/OurServicePage.jsx"));
 const PortofolioPage = lazy(() => import("./pages/PortofolioPage.jsx"));
+const PortofolioDetailPage = lazy(() =>
+  import("./pages/PortofolioDetailPage.jsx")
+);
 
 function App() {
   return (
@@ -41,10 +44,18 @@ function App() {
             }
           />
           <Route
-            path="portfolio"
+            path="our-portfolio"
             element={
               <Suspense>
                 <PortofolioPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="portfolio/:id"
+            element={
+              <Suspense>
+                <PortofolioDetailPage />
               </Suspense>
             }
           />

@@ -75,10 +75,11 @@ const PortofolioPage = () => {
 
               {/* Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {grouped[year].map((item, idx) => (
+                {grouped[year].map((item, index) => (
                   <PortofolioCard
-                    key={idx}
-                    index={idx}
+                    key={index}
+                    id={item.id}
+                    index={index}
                     title={item.name}
                     date={new Date(item.date).toLocaleDateString("en-GB", {
                       day: "2-digit",

@@ -25,7 +25,7 @@ const RecentPortofolioSection = () => {
             </p>
           </div>
           <a
-            href="/portfolio"
+            href="/our-portfolio"
             className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-red-100 dark:focus:ring-red-950"
           >
             See Full Portfolio
@@ -38,6 +38,7 @@ const RecentPortofolioSection = () => {
             <PortofolioCard
               key={index}
               index={index}
+              id={item.id}
               title={item.name}
               date={item.date}
               kind={item.kind}
