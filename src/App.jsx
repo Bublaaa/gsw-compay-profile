@@ -58,14 +58,6 @@ function App() {
               </Suspense>
             }
           />
-          <Route
-            path="our-service"
-            element={
-              <Suspense>
-                <OurServicePage />
-              </Suspense>
-            }
-          />
         </Route>
 
         {/* <Route
