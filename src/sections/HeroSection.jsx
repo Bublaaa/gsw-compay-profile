@@ -1,6 +1,7 @@
 import wallpaper from "../assets/hero-wallpaper.png";
 import securityImages from "../assets/security-guard.png";
 import * as LucideIcons from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 

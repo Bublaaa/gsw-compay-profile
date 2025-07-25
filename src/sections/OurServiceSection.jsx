@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { fadeIn } from "../utils/motion";
@@ -38,7 +39,7 @@ const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
   );
 };
 
-const OurServiceSection = ({}) => {
+const OurServiceSection = () => {
   return (
     <section id="our-service" className="bg-white-shadow w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">

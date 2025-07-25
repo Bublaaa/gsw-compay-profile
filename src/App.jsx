@@ -1,6 +1,6 @@
 import { Toaster } from "react-hot-toast";
-import { useEffect, lazy, Suspense } from "react";
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 import { Loader } from "lucide-react";
 import Dashboard from "./Dashboard.jsx";
 

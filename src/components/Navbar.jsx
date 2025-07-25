@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-scroll";
+import { useState } from "react";
 import * as LucideIcons from "lucide-react";
 import logo from "../assets/logo.webp";
 
