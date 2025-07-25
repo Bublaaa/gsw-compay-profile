@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import NavLinks from "./constants/NavLinks.js";
+import WhatsAppButton from "./components/WhatsAppButton.jsx";
+
 const Dashboard = () => {
   return (
     <div className="w-full flex flex-col h-screen items-end">
@@ -9,9 +11,10 @@ const Dashboard = () => {
         <Navbar links={NavLinks} />
       </div>
       {/* CONTENT */}
-      <div className="flex justify-center items-end w-full h-full overflow-y-auto scrollbar-hidden pb-10">
+      <div className="flex flex-col justify-center w-screen h-full overflow-y-auto scrollbar-hidden">
         <Outlet />
       </div>
+      <WhatsAppButton />
     </div>
   );
 };

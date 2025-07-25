@@ -1,8 +1,8 @@
 const sidebarLinks = [
-  { label: "Home", icon: "Blocks", href: "/" },
-  { label: "Service", icon: "FileDown", href: "/" },
-  { label: "About", icon: "FileUp", href: "/" },
-  { label: "Portfolio", icon: "ClipboardList", href: "/Portfolio" },
+  { label: "Home", id: "home", href: "/#home" },
+  { label: "Service", id: "service", href: "/#our-service" },
+  { label: "About Us", id: "about", href: "/about-us" },
+  { label: "Portfolio", id: "portofolio", href: "/our-portfolio" },
 ];
 
 export default sidebarLinks;
