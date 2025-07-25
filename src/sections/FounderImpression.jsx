@@ -1,8 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import founderImage from "../assets/founderImage.png";
 
-const FounderImpression = ({}) => {
+const FounderImpression = () => {
   return (
     <section id="founder-impression-section" className="relative bg-mid-dark">
       <div className="flex md:flex-row flex-col gap-5w-full items-end justify-start">

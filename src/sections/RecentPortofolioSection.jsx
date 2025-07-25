@@ -1,5 +1,6 @@
 import { portfolioData } from "../constants/PortofolioData";
 import { MoveRight } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import PortofolioCard from "../components/PortofolioCard";

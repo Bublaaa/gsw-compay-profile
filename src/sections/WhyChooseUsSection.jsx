@@ -1,5 +1,6 @@
 import * as LucideIcons from "lucide-react";
 import { fadeIn } from "../utils/motion";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { certificationList } from "../constants/CertificationData";
 import { reasonData } from "../constants/ReasonData";

@@ -8,7 +8,7 @@ import RecentPortofolioSection from "../sections/RecentPortofolioSection";
 import WhyChooseUsSection from "../sections/WhyChooseUsSection";
 import { footerData } from "../constants/FooterData";
 
-const HomePage = ({}) => {
+const HomePage = () => {
   return (
     <div className="w-full h-full flex flex-col">
       <HeroSection />

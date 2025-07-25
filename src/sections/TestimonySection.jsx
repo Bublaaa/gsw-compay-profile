@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { testimonies } from "../constants/TestimonyData";
