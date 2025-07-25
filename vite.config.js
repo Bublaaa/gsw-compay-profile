@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: "dist", // default, but make it explicit
   },
-  server: {
-    historyApiFallback: true, // for dev server routing
-  },
+  // server: {
+  //   historyApiFallback: true, // for dev server routing
+  // },
 });
