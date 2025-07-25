@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import founderImage from "../assets/founderImage.png";
+import founderImage from "../assets/FounderImage.png";
 
 const FounderImpression = () => {
   return (
