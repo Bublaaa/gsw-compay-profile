@@ -14,12 +14,12 @@ const HeroSection = () => {
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full md:py-60 py-30">
+      <div className="flex flex-col md:flex-row items-start justify-center gap-5 md:gap-10 px-4 max-w-screen-xl w-full h-full md:py-60 py-30">
         {/* Left Content */}
         <img
           src={securityImages}
           alt="security-guard"
-          className="h-auto w-1/4 grayscale md:block hidden"
+          className="h-auto w-1/4 grayscale lg:block hidden"
         />
         {/* Right Content */}
         <div className="flex flex-col w-full h-full  text-dark justify-start items-start gap-10">
