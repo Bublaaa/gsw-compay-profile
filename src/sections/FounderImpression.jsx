@@ -25,7 +25,7 @@ const FounderImpression = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
             >
-              Erick Lembong
+              Suyatno
             </motion.h2>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
