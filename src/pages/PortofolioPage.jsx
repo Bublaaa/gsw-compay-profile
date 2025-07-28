@@ -76,12 +76,12 @@ const PortofolioPage = () => {
                 value={year}
                 checked={year <= selectedYear}
                 onChange={() => handleCheckboxChange(year)}
-                className="text-accent cursor-pointer accent-accent hidden peer"
+                className="text-accent cursor-pointer hidden peer"
               />
               <label
                 key={year}
                 htmlFor={`checkbox-${year}`}
-                className="flex w-fit px-5 py-2 items-center cursor-pointer peer-checked:border-2 peer-checked:text-accent hover:bg-gray-100 peer-checked:border-accent peer-checked:bg-white  rounded-lg bg-white shadow-md text-gray-500 peer-checked:font-semibold font-regular"
+                className="flex w-fit px-5 py-2 items-center cursor-pointer peer-checked:border-2 peer-checked:text-light-accent hover:bg-gray-100 peer-checked:border-accent/30 peer-checked:bg-white  rounded-lg bg-white  text-gray-500 peer-checked:font-semibold font-regular"
               >
                 <span className="text-sm sm:text-lg">{year}</span>
               </label>

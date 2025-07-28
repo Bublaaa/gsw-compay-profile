@@ -30,7 +30,7 @@ const PortofolioCard = ({
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.1 + index * 0.2 }}
-        className="flex flex-col p-5 bg-white shadow-md rounded-lg"
+        className="flex flex-col p-5 bg-white shadow-md rounded-lg group hover:shadow-lg hover:scale-105 transition duration-300"
       >
         <img
           src={image}
@@ -39,10 +39,10 @@ const PortofolioCard = ({
           className="rounded-md"
         />
         <div className="flex flex-row w-full justify-between items-center mt-4">
-          <div className="text-accent px-5 py-2 bg-accent/10 rounded-full capitalize text-sm font-semibold">
-            <h6>{kind}</h6>
+          <div className="text-accent px-4 py-1 bg-accent/10 rounded-md capitalize text-sm font-semibold">
+            <h6 className="text-sm">{kind}</h6>
           </div>
-          <h6 className="text-sm text-gray-500">{date}</h6>
+          <h6 className="text-sm text-mid-dark-2">{date}</h6>
         </div>
         <h4 className="text-lg font-semibold mt-2">{title}</h4>
         <p className="text-gray-600 text-sm mt-1">{description}</p>

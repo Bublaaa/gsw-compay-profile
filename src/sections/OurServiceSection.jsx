@@ -14,7 +14,7 @@ const ServiceCard = ({ backgroundImage, title, description, Icon, index }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.1 + index * 0.5 }}
       className="group relative flex flex-col bg-mid-dark-1 w-full h-fit lg:h-full rounded-lg shadow-md overflow-hidden hover:scale-110 hover:bg-accent transition-transform duration-300 ease-in-out
@@ -70,7 +70,7 @@ const OurServiceSection = () => {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-30">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-30 bg-mid-dark-1 rounded-lg">
           {serviceData.map((service, index) => (
             <ServiceCard
               key={index}
