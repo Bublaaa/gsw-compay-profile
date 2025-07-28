@@ -5,16 +5,21 @@ import { motion } from "framer-motion";
 import { certificationList } from "../constants/CertificationData";
 import { reasonData } from "../constants/ReasonData";
 
-const CertificateCard = ({ title, index }) => {
+const CertificateCard = ({ title, index, pdfUrl }) => {
+  const handleOpenPdf = () => {
+    if (pdfUrl) window.open(pdfUrl, "_blank");
+  };
+
   return (
     <motion.div
-      className="flex flex-col bg-white shadow-md text-white-shadow hover:shadow-lg p-2 rounded-lg group cursor-pointer"
+      onClick={handleOpenPdf}
+      className="flex flex-col bg-white shadow-md text-white-shadow hover:shadow-lg p-2 rounded-lg group cursor-pointer transition-all duration-300"
       variants={fadeIn("right", "spring", 0.1, (index + 1) * 0.5)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="flex flex-col h-full border border-2 border-white-shadow  p-1 pr-3 rounded-lg justify-between">
+      <div className="flex flex-col h-full border border-2 border-white-shadow p-1 pr-3 rounded-lg justify-between">
         <LucideIcons.CircleCheckBig className="w-15 h-15 text-accent/30 group-hover:text-accent" />
         <h5 className="text-accent/100 text-end">{title}</h5>
       </div>
@@ -96,6 +101,7 @@ const WhyChooseUsSection = () => {
               key={index}
               title={certification.title}
               index={index}
+              pdfUrl={certification.pdfUrl}
             />
           ))}
         </div>
