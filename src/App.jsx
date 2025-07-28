@@ -6,7 +6,6 @@ import Dashboard from "./Dashboard.jsx";
 
 const HomePage = lazy(() => import("./pages/HomePage.jsx"));
 const AboutUsPage = lazy(() => import("./pages/AboutUsPage.jsx"));
-const OurServicePage = lazy(() => import("./pages/OurServicePage.jsx"));
 const PortofolioPage = lazy(() => import("./pages/PortofolioPage.jsx"));
 const PortofolioDetailPage = lazy(() =>
   import("./pages/PortofolioDetailPage.jsx")
@@ -56,14 +55,6 @@ function App() {
             element={
               <Suspense>
                 <PortofolioDetailPage />
-              </Suspense>
-            }
-          />
-          <Route
-            path="our-service"
-            element={
-              <Suspense>
-                <OurServicePage />
               </Suspense>
             }
           />
