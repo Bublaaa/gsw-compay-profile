@@ -55,7 +55,7 @@ const OurTeamSection = () => {
             Team work make dream work
           </motion.h2>
         </div>
-        <div className="grid lg:grid-cols-5 grid-cols-1 md:gap-10 gap-5 md:px-30 bg-white-shadow">
+        <div className="grid lg:grid-cols-5 grid-cols-2 md:gap-10 gap-5 md:px-30 bg-white-shadow">
           {teamData.map((person, index) => (
             <PersonCard
               key={index}
