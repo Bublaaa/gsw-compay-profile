@@ -9,57 +9,23 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="bg-dark-hover bg-center bg-cover bg-no-repeat bg-blend-multiply w-full h-full flex justify-center"
+      className=" bg-center bg-cover bg-no-repeat bg-blend-multiply w-full h-full flex justify-center"
       style={{
         backgroundImage: `url(${wallpaper})`,
       }}
     >
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 px-4 max-w-screen-xl w-full h-full md:py-60 py-30">
-        {" "}
+      <div className="flex flex-col md:flex-row items-start justify-center gap-5 md:gap-10 px-4 max-w-screen-xl w-full h-full md:py-60 py-30">
         {/* Left Content */}
-        <div className="md:order-1 order-2 relative flex w-full lg:w-1/2 h-full justify-end items-end">
-          <img
-            src={securityImages}
-            alt="security-guard"
-            className="h-auto max-h-[60vh] w-auto grayscale z-10 ml-auto"
-          />
-          <motion.div
-            className="absolute bottom-0 right-0 z-20 p-4 sm:p-6 bg-accent rounded-lg shadow-lg"
-            variants={fadeIn("right", "spring", 0.1, 1.6)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex items-start gap-2">
-                <LucideIcons.ShieldCheck className="w-8 h-8 text-white" />
-                <div>
-                  <h2 className="text-white text-sm font-semibold">
-                    Certified
-                  </h2>
-                  <p className="text-gray-200 text-xs leading-tight">
-                    Certified security services provider
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-2">
-                <LucideIcons.Gauge className="w-8 h-8 text-white" />
-                <div>
-                  <h2 className="text-white text-sm font-semibold">
-                    Fast Response
-                  </h2>
-                  <p className="text-gray-200 text-xs leading-tight">
-                    Immediate security reaction on call
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+        <img
+          src={securityImages}
+          alt="security-guard"
+          className="h-auto w-1/4 grayscale lg:block hidden"
+        />
         {/* Right Content */}
-        <div className="md:order-2 order-1 flex flex-col w-full lg:w-1/2  h-full  text-white justify-end items-start">
-          <div className="flex flex-col">
-            <motion.h4
+        <div className="flex flex-col w-full h-full  text-dark justify-start items-start gap-10">
+          {/* Text Block */}
+          <div className="flex flex-col gap-5">
+            <motion.h3
               className="text-accent"
               variants={fadeIn("left", "spring", 0.1, 1)}
               initial="hidden"
@@ -67,40 +33,59 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               Garda Setia Waspada
-            </motion.h4>
-            <motion.h2
+            </motion.h3>
+            <motion.h1
               variants={fadeIn("left", "spring", 0.1, 1.2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
             >
               Professional Security Services
-            </motion.h2>
+            </motion.h1>
             <motion.p
-              className="text-gray-300"
+              className="text-gray-600"
               variants={fadeIn("left", "spring", 0.1, 1.4)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
             >
-              A professional security service provider with extensive
-              experience...
+              Backed by years of hands-on experience, we provide professional,
+              trusted security services designed to anticipate threats, protect
+              communities, and ensure safety every step of the way.
             </motion.p>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mt-4">
-            <motion.a
-              href="#our-service"
-              className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-accent/40 "
-              variants={fadeIn("up", "spring", 0.1, 1.6)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              Get started
-              <LucideIcons.MoveRight className="ml-3" />
-            </motion.a>
-          </div>
+          <motion.div
+            className="p-4 sm:p-6 bg-white-shadow/80 rounded-lg w-fit"
+            variants={fadeIn("right", "spring", 0.1, 1.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div className="flex flex-row gap-20 ">
+              <div className="flex-col items-center justify-center">
+                <LucideIcons.ShieldCheck className="md:w-15 md:h-15 h-10 w-10 mx-auto text-accent" />
+                <h5 className="text-mid-dark-2">Certified</h5>
+              </div>
+
+              <div className="flex flex-col items-center justify-center">
+                <LucideIcons.Gauge className="md:w-15 md:h-15 h-10 w-10  mx-auto text-accent" />
+                <h5 className="text-mid-dark-2">Fast Response</h5>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.a
+            href="#our-service"
+            className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-accent/40 "
+            variants={fadeIn("up", "spring", 0.1, 1.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            Get started
+            <LucideIcons.MoveRight className="ml-3" />
+          </motion.a>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ const Navbar = ({ links }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-dark/50 backdrop-blur-md fixed top-0 w-full z-50">
+    <nav className="bg-white/50 backdrop-blur-md fixed top-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -46,7 +46,7 @@ const Navbar = ({ links }) => {
                     className={`block py-2 px-3 text-sm rounded-md ${
                       isActive
                         ? "text-accent font-semibold"
-                        : "text-gray-300 font-regular hover:text-white"
+                        : "text-gray-500 font-regular hover:dark-hover hover:text-dark"
                     }`}
                     aria-current={isActive ? "page" : undefined}
                   >

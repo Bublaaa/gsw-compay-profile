@@ -8,21 +8,21 @@ export const serviceData = [
     backgroundImage: securityService,
     title: "Security Service",
     description:
-      "We offer certified, well-trained security personnel who are fully prepared to serve in diverse industries and dynamic work environments with professionalism and readiness.",
+      "Certified, adaptable security personnel delivering reliable protection with professionalism.",
     Icon: LucideIcons.Shield,
   },
   {
     backgroundImage: administrativeService,
     title: "Administrative Officer Services",
     description:
-      "Our administrative staff are courteous, detail-oriented, and trained to provide efficient support for day-to-day operations with professionalism and precision.",
+      "Courteous, detail-oriented staff ensuring efficient daily operations.",
     Icon: LucideIcons.BookText,
   },
   {
     backgroundImage: assistantService,
     title: "Office Assistant Services",
     description:
-      "We supply disciplined, trustworthy, and proactive office assistants who bring speed, responsibility, and a positive mindset to every task.",
+      "Disciplined, proactive assistants supporting tasks with speed and reliability.",
     Icon: LucideIcons.BrushCleaning,
   },
 ];

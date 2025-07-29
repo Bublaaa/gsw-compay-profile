@@ -15,10 +15,9 @@ const PortofolioDetailPage = () => {
   };
 
   const getRandomSpan = () => {
-    const spanOptions = [1, 2];
-    const colSpan = spanOptions[Math.floor(Math.random() * spanOptions.length)];
-    const rowSpan = spanOptions[Math.floor(Math.random() * spanOptions.length)];
-    return { colSpan, rowSpan };
+    const spanOptions = [1, 2, 3];
+    const span = spanOptions[Math.floor(Math.random() * spanOptions.length)];
+    return { span };
   };
 
   const PreviousButton = () => (
@@ -51,8 +50,8 @@ const PortofolioDetailPage = () => {
   );
 
   return (
-    <div className="w-full h-full flex flex-col bg-white">
-      <section className="w-full bg-white">
+    <div className="w-full h-full flex flex-col bg-white-shadow">
+      <section className="w-full ">
         <div className="flex flex-col md:max-w-screen-xl w-full md:py-20 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-5 gap-5 md:px-20">
           {/* Buttons */}
           <div className="flex flex-row gap-5 mt-10">
@@ -71,9 +70,9 @@ const PortofolioDetailPage = () => {
             <p className="text-gray-600 max-w-2xl">{portofolio.description}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 grid-cols-2 auto-rows-[150px] gap-2 w-full">
+          <div className="grid md:grid-cols-4 grid-cols-2 auto-rows-[150px] gap-2 w-full">
             {portofolio.images.map((img, index) => {
-              const { colSpan, rowSpan } = getRandomSpan();
+              const { span } = getRandomSpan();
               return (
                 <img
                   key={index}
@@ -81,8 +80,8 @@ const PortofolioDetailPage = () => {
                   onError={handleImageError}
                   alt={`Portfolio ${index}`}
                   className={`object-cover w-full h-full rounded ${
-                    colSpan === 2 ? "col-span-2" : "col-span-1"
-                  } ${rowSpan === 2 ? "row-span-2" : "row-span-1"}`}
+                    span === 2 ? "col-span-2" : "col-span-1"
+                  } ${span === 2 ? "row-span-2" : "row-span-1"}`}
                 />
               );
             })}

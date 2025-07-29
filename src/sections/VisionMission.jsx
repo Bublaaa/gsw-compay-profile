@@ -29,7 +29,7 @@ const VisionMissionSection = () => {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-10 w-full">
           <motion.div
-            className="flex flex-col gap-5 bg-white rounded-lg shadow-md items-center px-10 py-10"
+            className="flex flex-col gap-5 bg-white rounded-lg shadow-md hover:shadow-lg hover:scale-105 items-center px-10 py-10 transition duration-300"
             variants={fadeIn("right", "spring", 0.1, 1.4)}
             initial="hidden"
             whileInView="show"
@@ -47,7 +47,7 @@ const VisionMissionSection = () => {
             </p>
           </motion.div>
           <motion.div
-            className="flex flex-col gap-5 bg-white rounded-lg shadow-md items-center px-10 py-10"
+            className="flex flex-col gap-5 bg-white rounded-lg shadow-md hover:shadow-lg hover:scale-105 items-center px-10 py-10 transition duration-300"
             variants={fadeIn("left", "spring", 0.1, 1.4)}
             initial="hidden"
             whileInView="show"
