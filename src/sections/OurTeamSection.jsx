@@ -17,16 +17,15 @@ const PersonCard = ({ image, name, role, index }) => {
       initial={{ opacity: 0, y: 0 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.1 + index * 0.5 }}
-      className="group relative flex flex-col w-full h-fit lg:h-full overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out gap-1
-"
+      className="group relative flex flex-col w-full h-fit lg:h-full overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out"
     >
-      <img
-        src={image}
-        alt={name}
-        className="w-full h-auto object-cover rounded-lg bg-white"
-      />
-      <h5 className="px-2 text-accent">{name}</h5>
-      <p className="px-2 font-regular">{role}</p>
+      <div className="overflow-hidden">
+        <img src={image} alt={name} className="w-full h-auto object-cover " />
+      </div>
+      <div className="flex flex-col bg-mid-dark-2 h-fill p-2">
+        <h6 className="px-2 text-accent">{name}</h6>
+        <p className="px-2 font-regular text-white">{role}</p>
+      </div>
     </motion.div>
   );
 };
@@ -35,7 +34,7 @@ const OurTeamSection = () => {
   return (
     <section id="our-team" className="bg-white-shadow w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">
-        <div className="flex flex-col gap-2 items-end justify-end w-full">
+        <div className="flex flex-col items-start pl-20 justify-end w-full">
           <motion.h4
             variants={fadeIn("right", "spring", 0.1, 1)}
             initial="hidden"
@@ -55,7 +54,7 @@ const OurTeamSection = () => {
             Team work make dream work
           </motion.h2>
         </div>
-        <div className="grid lg:grid-cols-5 grid-cols-2 md:gap-10 gap-5 md:px-30 bg-white-shadow">
+        <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-10 gap-5 md:px-30 bg-white-shadow">
           {teamData.map((person, index) => (
             <PersonCard
               key={index}
