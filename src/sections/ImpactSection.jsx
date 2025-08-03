@@ -1,6 +1,7 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+import wallpaper from "../assets/impact-wallpaper.png";
 
 const stats = [
   { value: 100, suffix: "+", description: "Successful Projects Completed" },
@@ -26,7 +27,10 @@ const ImpactSection = () => {
     <section
       id="our-impact"
       ref={ref}
-      className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
+      className="bg-center bg-no-repeat  bg-blend-multiply"
+      style={{
+        backgroundImage: `url(${wallpaper})`,
+      }}
     >
       <div className="flex flex-col gap-5 mx-auto text-center items-center py-16 lg:py-20 px-4">
         <div className="flex flex-col gap-3 items-center text-center">

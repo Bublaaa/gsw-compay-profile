@@ -3,7 +3,7 @@ import logo from "../assets/logo.webp";
 const FooterSection = ({ footerData }) => {
   return (
     <section id="footer">
-      <footer className="bg-dark">
+      <footer className="bg-mid-dark-1">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="flex md:flex-row flex-col md:justify-between w-full gap-10">
             {/* Left side */}
@@ -23,25 +23,25 @@ const FooterSection = ({ footerData }) => {
             <div className="w-full space-y-2 md:pl-50">
               <a
                 href={footerData.phoneLink}
-                className="block text-sm text-white hover:text-accent transition"
+                className="block text-sm text-white hover:text-light-accent transition"
               >
                 {footerData.phoneNumber}
               </a>
               <a
                 href={footerData.businessEmailLink}
-                className="block text-sm text-white hover:text-accent transition"
+                className="block text-sm text-white hover:text-light-accent transition"
               >
                 {footerData.businessEmail}
               </a>
               <a
                 href="https://www.larosmulti.id"
-                className="block text-sm text-white hover:text-accent transition"
+                className="block text-sm text-white hover:text-light-accent transition"
               >
                 www.garda-setia-waspada.id
               </a>
               <a
                 href="mailto:support@laros-epcc.com"
-                className="block text-sm text-white hover:text-accent transition"
+                className="block text-sm text-white hover:text-light-accent transition"
               >
                 support@gsw.com
               </a>

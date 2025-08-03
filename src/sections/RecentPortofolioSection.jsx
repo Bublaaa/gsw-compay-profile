@@ -12,7 +12,7 @@ const RecentPortofolioSection = () => {
     .slice(0, 3);
 
   return (
-    <section id="recent-portofolio" className="bg-white w-full">
+    <section id="recent-portofolio" className="bg-white-shadow w-full">
       <div className="flex flex-col md:max-w-screen-xl w-full md:py-40 py-10 px-5 md:px-0 items-start justify-center mx-auto md:gap-10 gap-5">
         <div className="flex md:flex-row flex-col w-full justify-between gap-5 md:items-end items-start md:px-30">
           <div className="flex flex-col">

@@ -19,18 +19,18 @@ const FounderImpression = () => {
               Founder Impression
             </motion.h4>
             <motion.h2
-              className="w-full text-white"
+              className="w-full text-dark"
               variants={fadeIn("right", "spring", 0.1, 1.2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
             >
-              Erick Lembong
+              Suyatno
             </motion.h2>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
             <motion.p
-              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-white "
+              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-gray-600"
               variants={fadeIn("up", "spring", 0.1, 1.4)}
               initial="hidden"
               whileInView="show"
@@ -46,7 +46,7 @@ const FounderImpression = () => {
               integrity, adaptability, and professionalism.
             </motion.p>
             <motion.p
-              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-white"
+              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-gray-600"
               variants={fadeIn("up", "spring", 0.1, 1.5)}
               initial="hidden"
               whileInView="show"
@@ -62,7 +62,7 @@ const FounderImpression = () => {
               credibility and public trust.
             </motion.p>
             <motion.p
-              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-white"
+              className="text-sm md:text-sm lg:text-base max-w-sm md:max-w-3xl lg:max-w-4xl text-gray-600"
               variants={fadeIn("up", "spring", 0.1, 1.6)}
               initial="hidden"
               whileInView="show"

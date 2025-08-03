@@ -5,7 +5,7 @@ import { clientLogos } from "../constants/ClientLogoData";
 
 const OurClientsSection = () => {
   return (
-    <section id="our-products-section" className="bg-white-shadow w-full">
+    <section id="our-products-section" className="bg-white w-full">
       <div className="flex flex-col md:max-w-screen-lg w-full md:py-40 py-20 px-5 items-center justify-center mx-auto gap-10">
         <div className="flex flex-col gap-2 items-center text-center">
           <h2 className="w-full text-accent">Trusted by Industry Leaders</h2>
@@ -18,7 +18,7 @@ const OurClientsSection = () => {
           {clientLogos.map((logo, index) => (
             <motion.a
               key={index}
-              className="w-fit h-fit bg-white rounded-lg shadow-md"
+              className="w-fit h-fit bg-white rounded-lg"
               variants={fadeIn("up", "spring", 0.1, (index + 1) * 0.1)}
               initial="hidden"
               whileInView="show"
