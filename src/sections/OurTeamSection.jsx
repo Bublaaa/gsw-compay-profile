@@ -17,10 +17,14 @@ const PersonCard = ({ image, name, role, index }) => {
       initial={{ opacity: 0, y: 0 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.1 + index * 0.5 }}
-      className="group relative flex flex-col w-full h-fit lg:h-full overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out"
+      className="group relative flex flex-col w-full h-fit lg:h-full overflow-hidden"
     >
       <div className="overflow-hidden">
-        <img src={image} alt={name} className="w-full h-auto object-cover " />
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+        />
       </div>
       <div className="flex flex-col bg-mid-dark-2 h-fill p-2">
         <h6 className="px-2 text-accent">{name}</h6>
