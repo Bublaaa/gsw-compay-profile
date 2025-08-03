@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { portfolioData } from "../constants/PortofolioData";
 import { ChevronLeft, ChevronRight, List } from "lucide-react";
-import placeholderImage from "../assets/placeholderImage.png";
+import placeholderImage from "../assets/placeholderImage.webp";
 
 const PortofolioDetailPage = () => {
   const { id } = useParams();
