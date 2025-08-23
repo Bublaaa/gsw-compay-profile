@@ -38,7 +38,7 @@ const PortofolioCard = ({
           onError={handleImageError}
           className="rounded-md"
         />
-        <div className="flex flex-row w-full justify-between items-center mt-4">
+        <div className="flex flex-row w-full h-10 justify-between items-center mt-4">
           <div className="text-accent px-4 py-1 bg-accent/10 rounded-md capitalize text-sm font-semibold">
             <h6 className="text-sm">{kind}</h6>
           </div>
