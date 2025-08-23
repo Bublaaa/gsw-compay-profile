@@ -1,7 +1,7 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import wallpaper from "../assets/impact-wallpaper.png";
+import wallpaper from "../assets/impact-wallpaper.webp";
 
 const stats = [
   { value: 100, suffix: "+", description: "Successful Projects Completed" },

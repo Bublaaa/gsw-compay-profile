@@ -1,31 +1,70 @@
+import LatihanPemadamanKebakaran1 from "../assets/portfolio/2025/LatihanPemadamanKebakaran1.webp";
+import LatihanPemadamanKebakaran2 from "../assets/portfolio/2025/LatihanPemadamanKebakaran2.webp";
+import LatihanPemadamanKebakaran3 from "../assets/portfolio/2025/LatihanPemadamanKebakaran3.webp";
+import LatihanPemadamanKebakaran4 from "../assets/portfolio/2025/LatihanPemadamanKebakaran4.webp";
+import LatihanPemadamanKebakaran5 from "../assets/portfolio/2025/LatihanPemadamanKebakaran5.webp";
+import LatihanPemadamanKebakaran6 from "../assets/portfolio/2025/LatihanPemadamanKebakaran6.webp";
+import LatihanPemadamanKebakaran7 from "../assets/portfolio/2025/LatihanPemadamanKebakaran7.webp";
+import LatihanPemadamanKebakaran8 from "../assets/portfolio/2025/LatihanPemadamanKebakaran8.webp";
+
+import AuditPoldaMetro1 from "../assets/portfolio/2024/AuditPoldaMetro1.webp";
+import AuditPoldaMetro2 from "../assets/portfolio/2024/AuditPoldaMetro2.webp";
+import AuditPoldaMetro3 from "../assets/portfolio/2024/AuditPoldaMetro3.webp";
+
+import Rakornas1 from "../assets/portfolio/2022/Rakornas1.webp";
+import Rakornas2 from "../assets/portfolio/2022/Rakornas2.webp";
+import Rakornas3 from "../assets/portfolio/2022/Rakornas3.webp";
+import Rakornas4 from "../assets/portfolio/2022/Rakornas4.webp";
+import Rakornas5 from "../assets/portfolio/2022/Rakornas5.webp";
+import Rakornas6 from "../assets/portfolio/2022/Rakornas6.webp";
+
+import SeminarRadikalismedanTerorisme1 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme1.webp";
+import SeminarRadikalismedanTerorisme2 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme2.webp";
+import SeminarRadikalismedanTerorisme3 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme3.webp";
+import SeminarRadikalismedanTerorisme4 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme4.webp";
+import SeminarRadikalismedanTerorisme5 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme5.webp";
+import SeminarRadikalismedanTerorisme6 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme6.webp";
+import SeminarRadikalismedanTerorisme7 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme7.webp";
+import SeminarRadikalismedanTerorisme8 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme8.webp";
+import SeminarRadikalismedanTerorisme9 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme9.webp";
+
+// import PembinaanTeknisDasardanIntelejen1 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen1.webp";
+// import PembinaanTeknisDasardanIntelejen2 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen2.webp";
+// import PembinaanTeknisDasardanIntelejen3 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen3.webp";
+// import PembinaanTeknisDasardanIntelejen4 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen4.webp";
+// import PembinaanTeknisDasardanIntelejen5 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen5.webp";
+// import PembinaanTeknisDasardanIntelejen6 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen6.webp";
+// import PembinaanTeknisDasardanIntelejen7 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen7.webp";
+
 export const portfolioData = [
   // === 2024 ===
   {
     id: 1,
-    date: "2024-06-12",
-    name: "Advanced Workplace Security Training",
+    date: "2025-01-18",
+    name: "Latihan Pemadaman Kebakaran",
     description:
-      "Hands-on training on emergency protocols and digital access systems for industrial clients.",
+      "A fire drill to train participants in extinguisher use, evacuation, and safety awareness, enhancing preparedness and confidence in emergencies.",
     images: [
-      "/assets/portfolio/2024/training1.png",
-      "/assets/portfolio/2024/training2.png",
-      "/assets/portfolio/2024/training3.png",
-      "/assets/portfolio/2024/training4.png",
-      "/assets/portfolio/2024/training5.png",
+      LatihanPemadamanKebakaran1,
+      LatihanPemadamanKebakaran2,
+      LatihanPemadamanKebakaran3,
+      LatihanPemadamanKebakaran4,
+      LatihanPemadamanKebakaran5,
+      LatihanPemadamanKebakaran6,
+      LatihanPemadamanKebakaran7,
+      LatihanPemadamanKebakaran8,
     ],
     kind: "training",
   },
+
   {
     id: 2,
-    date: "2024-04-18",
-    name: "Leadership & Crisis Management Seminar",
+    date: "2024-03-28",
+    name: "Audit Polda Metro Jaya",
     description:
-      "Focused on strategic leadership in security operations and real-time crisis response.",
-    images: [
-      "/assets/portfolio/2024/seminar1.png",
-      "/assets/portfolio/2024/seminar2.png",
-    ],
-    kind: "seminar",
+      "An audit at Polda Metro Jaya to ensure compliance with procedures and standards, assess effectiveness, and improve accountability.",
+    images: [AuditPoldaMetro1, AuditPoldaMetro2, AuditPoldaMetro3],
+    kind: "audit",
   },
   {
     id: 3,
@@ -49,12 +88,22 @@ export const portfolioData = [
   // === 2023 ===
   {
     id: 5,
-    date: "2023-10-10",
-    name: "Mobile Patrol System Training",
+    date: "2023-10-20",
+    name: "Seminar Radikalisme dan Terorisme",
     description:
-      "Training on app-based patrol management and QR attendance for field officers.",
-    images: ["/assets/portfolio/2023/training1.png"],
-    kind: "training",
+      "A seminar addressing radicalism and terrorism, aimed at increasing awareness, sharing preventive strategies, and strengthening resilience against potential threats.",
+    images: [
+      SeminarRadikalismedanTerorisme1,
+      SeminarRadikalismedanTerorisme2,
+      SeminarRadikalismedanTerorisme3,
+      SeminarRadikalismedanTerorisme4,
+      SeminarRadikalismedanTerorisme5,
+      SeminarRadikalismedanTerorisme6,
+      SeminarRadikalismedanTerorisme7,
+      SeminarRadikalismedanTerorisme8,
+      SeminarRadikalismedanTerorisme9,
+    ],
+    kind: "seminar",
   },
   {
     id: 6,
@@ -87,11 +136,11 @@ export const portfolioData = [
   // === 2022 ===
   {
     id: 9,
-    date: "2022-11-05",
-    name: "Security Systems Integration Seminar",
+    date: "2022-11-02",
+    name: "Rapat Koordinasi Nasional Asosiasi Profesi Satpam Indonesia",
     description:
-      "Exploration of integrating IoT devices with traditional alarm and access systems.",
-    images: ["/assets/portfolio/2022/seminar1.png"],
+      "The National Coordination Meeting of the Indonesian Security Profession Association, held to align strategies, strengthen collaboration, and discuss key developments in the security profession nationwide.",
+    images: [Rakornas1, Rakornas2, Rakornas3, Rakornas4, Rakornas5, Rakornas6],
     kind: "seminar",
   },
   {

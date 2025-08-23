@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { portfolioData } from "../constants/PortofolioData";
 import { ChevronLeft, ChevronRight, List } from "lucide-react";
 import placeholderImage from "../assets/placeholderImage.webp";
+import { div } from "framer-motion/client";
 
 const PortofolioDetailPage = () => {
   const { id } = useParams();
@@ -79,9 +80,7 @@ const PortofolioDetailPage = () => {
                   src={img}
                   onError={handleImageError}
                   alt={`Portfolio ${index}`}
-                  className={`object-cover w-full h-full rounded ${
-                    span === 2 ? "col-span-2" : "col-span-1"
-                  } ${span === 2 ? "row-span-2" : "row-span-1"}`}
+                  className={`object-cover w-full h-full rounded col-span-2 row-span-2`}
                 />
               );
             })}
