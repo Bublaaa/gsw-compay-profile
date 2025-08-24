@@ -18,6 +18,31 @@ import Rakornas4 from "../assets/portfolio/2022/Rakornas4.webp";
 import Rakornas5 from "../assets/portfolio/2022/Rakornas5.webp";
 import Rakornas6 from "../assets/portfolio/2022/Rakornas6.webp";
 
+import BintekPPN1 from "../assets/portfolio/2023/BintekPPN1.webp";
+import BintekPPN2 from "../assets/portfolio/2023/BintekPPN2.webp";
+import BintekPPN3 from "../assets/portfolio/2023/BintekPPN3.webp";
+import BintekPPN4 from "../assets/portfolio/2023/BintekPPN4.webp";
+import BintekPPN5 from "../assets/portfolio/2023/BintekPPN5.webp";
+import BintekPPN6 from "../assets/portfolio/2023/BintekPPN6.webp";
+import BintekPPN7 from "../assets/portfolio/2023/BintekPPN7.webp";
+
+import SafeguardingofMajorEvents1 from "../assets/portfolio/2023/SafeguardingofMajorEvents1.webp";
+import SafeguardingofMajorEvents2 from "../assets/portfolio/2023/SafeguardingofMajorEvents2.webp";
+import SafeguardingofMajorEvents3 from "../assets/portfolio/2023/SafeguardingofMajorEvents3.webp";
+import SafeguardingofMajorEvents4 from "../assets/portfolio/2023/SafeguardingofMajorEvents4.webp";
+
+import SecurityForum1 from "../assets/portfolio/2023/SecurityForum1.webp";
+import SecurityForum2 from "../assets/portfolio/2023/SecurityForum2.webp";
+import SecurityForum3 from "../assets/portfolio/2023/SecurityForum3.webp";
+
+import ProgramCapabilitySecuritySEBUSE1 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE1.webp";
+import ProgramCapabilitySecuritySEBUSE2 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE2.webp";
+import ProgramCapabilitySecuritySEBUSE3 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE3.webp";
+import ProgramCapabilitySecuritySEBUSE4 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE4.webp";
+import ProgramCapabilitySecuritySEBUSE5 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE5.webp";
+import ProgramCapabilitySecuritySEBUSE6 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE6.webp";
+import ProgramCapabilitySecuritySEBUSE7 from "../assets/portfolio/2023/ProgramCapabilitySecuritySEBUSE7.webp";
+
 import SeminarRadikalismedanTerorisme1 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme1.webp";
 import SeminarRadikalismedanTerorisme2 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme2.webp";
 import SeminarRadikalismedanTerorisme3 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme3.webp";
@@ -27,6 +52,11 @@ import SeminarRadikalismedanTerorisme6 from "../assets/portfolio/2023/SeminarRad
 import SeminarRadikalismedanTerorisme7 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme7.webp";
 import SeminarRadikalismedanTerorisme8 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme8.webp";
 import SeminarRadikalismedanTerorisme9 from "../assets/portfolio/2023/SeminarRadikalismedanTerorisme9.webp";
+
+import KunjunganClient1 from "../assets/portfolio/2025/KunjunganClient1.webp";
+import KunjunganClient2 from "../assets/portfolio/2025/KunjunganClient2.webp";
+import KunjunganClient3 from "../assets/portfolio/2025/KunjunganClient3.webp";
+import KunjunganClient4 from "../assets/portfolio/2025/KunjunganClient4.webp";
 
 // import PembinaanTeknisDasardanIntelejen1 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen1.webp";
 // import PembinaanTeknisDasardanIntelejen2 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen2.webp";
@@ -39,7 +69,7 @@ import SeminarRadikalismedanTerorisme9 from "../assets/portfolio/2023/SeminarRad
 export const portfolioData = [
   // === 2024 ===
   {
-    id: 1,
+    id: 7,
     date: "2025-01-18",
     name: "Latihan Pemadaman Kebakaran",
     description:
@@ -56,9 +86,40 @@ export const portfolioData = [
     ],
     kind: "training",
   },
-
+  // === 2023 ===
   {
-    id: 2,
+    id: 6,
+    date: "2023-02-06",
+    name: "Bimbingan Teknis Sistem Manajemen Pengamanan, Security Awareness, Evaluasi Kinerja BKO TNI & Internalisasi AKHLAK PT Pertamina Patra Niaga",
+    description:
+      "A technical guidance program covering the Security Management System, security awareness, performance evaluation of assigned military personnel (BKO TNI), and the internalization of AKHLAK values at PT Pertamina Patra Niaga.",
+    images: [
+      BintekPPN1,
+      BintekPPN2,
+      BintekPPN3,
+      BintekPPN4,
+      BintekPPN5,
+      BintekPPN6,
+      BintekPPN7,
+    ],
+    kind: "seminar",
+  },
+  {
+    id: 5,
+    date: "2025-04-19",
+    name: "Kunjungan Client",
+    description:
+      "A client visit conducted to audit the deployed security personnel, ensuring their performance, compliance, and suitability for assigned duties.",
+    images: [
+      KunjunganClient1,
+      KunjunganClient2,
+      KunjunganClient3,
+      KunjunganClient4,
+    ],
+    kind: "audit",
+  },
+  {
+    id: 4,
     date: "2024-03-28",
     name: "Audit Polda Metro Jaya",
     description:
@@ -68,26 +129,6 @@ export const portfolioData = [
   },
   {
     id: 3,
-    date: "2024-02-22",
-    name: "Corporate Security Awareness Seminar",
-    description:
-      "Engaged employees from the finance and retail sectors on threat detection and prevention.",
-    images: ["/assets/portfolio/2024/seminar3.png"],
-    kind: "seminar",
-  },
-  {
-    id: 4,
-    date: "2024-01-15",
-    name: "Incident Response Protocol Training",
-    description:
-      "Simulation-based training for response units on fire, theft, and disaster recovery.",
-    images: ["/assets/portfolio/2024/training2.png"],
-    kind: "training",
-  },
-
-  // === 2023 ===
-  {
-    id: 5,
     date: "2023-10-20",
     name: "Seminar Radikalisme dan Terorisme",
     description:
@@ -106,106 +147,62 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
-    id: 6,
-    date: "2023-08-22",
-    name: "Public Safety Seminar with Local Government",
+    id: 3,
+    date: "2023-10-20",
+    name: 'Seminar Security "Effective Management Safeguarding of Major Events"',
     description:
-      "Collaborative seminar discussing neighborhood safety strategies and integrated command centers.",
-    images: ["/assets/portfolio/2023/seminar1.png"],
+      "A seminar on effective security management for major events, focusing on strategies, risk mitigation, and safeguarding best practices.",
+    images: [
+      SafeguardingofMajorEvents1,
+      SafeguardingofMajorEvents2,
+      SafeguardingofMajorEvents3,
+      SafeguardingofMajorEvents4,
+    ],
     kind: "seminar",
   },
   {
-    id: 7,
-    date: "2023-05-12",
-    name: "Occupational Safety Seminar",
+    id: 3,
+    date: "2023-08-31",
+    name: 'Security Forum - "Perlindungan Infrastruktur dan Penggunaan Teknologi Identifikasi Dalam Keamanan Pemilu"',
     description:
-      "Focused on HSSE standards and compliance in logistics and manufacturing companies.",
-    images: ["/assets/portfolio/2023/seminar2.png"],
+      "A security forum discussing infrastructure protection and the use of identification technology to enhance election security.",
+    images: [SecurityForum1, SecurityForum2, SecurityForum3],
     kind: "seminar",
   },
   {
-    id: 8,
-    date: "2023-03-18",
-    name: "CCTV & Surveillance Management Training",
+    id: 2,
+    date: "2023-03-12",
+    name: "Program Capability Security SEBUSE (Sehat Bugar Senang)",
     description:
-      "Practical course on modern surveillance systems and data storage compliance.",
-    images: ["/assets/portfolio/2023/training2.png"],
+      "A security capability program called SEBUSE (Healthy, Fit, and Happy), designed to improve physical fitness, mental well-being, and overall readiness of security personnel.",
+    images: [
+      ProgramCapabilitySecuritySEBUSE1,
+      ProgramCapabilitySecuritySEBUSE2,
+      ProgramCapabilitySecuritySEBUSE3,
+      ProgramCapabilitySecuritySEBUSE4,
+      ProgramCapabilitySecuritySEBUSE5,
+      ProgramCapabilitySecuritySEBUSE6,
+      ProgramCapabilitySecuritySEBUSE7,
+    ],
     kind: "training",
   },
-
-  // === 2022 ===
   {
-    id: 9,
+    id: 1,
     date: "2022-11-02",
     name: "Rapat Koordinasi Nasional Asosiasi Profesi Satpam Indonesia",
     description:
-      "The National Coordination Meeting of the Indonesian Security Profession Association, held to align strategies, strengthen collaboration, and discuss key developments in the security profession nationwide.",
+      "A national coordination meeting of the Indonesian Security Profession Association to align strategies and strengthen collaboration.",
     images: [Rakornas1, Rakornas2, Rakornas3, Rakornas4, Rakornas5, Rakornas6],
     kind: "seminar",
   },
-  {
-    id: 10,
-    date: "2022-09-15",
-    name: "Fire Safety & Evacuation Training",
-    description:
-      "Fire risk awareness and simulation-based evacuation drills for plant security staff.",
-    images: ["/assets/portfolio/2022/training1.png"],
-    kind: "training",
-  },
-  {
-    id: 11,
-    date: "2022-06-30",
-    name: "Behavioral Analysis in Security Seminar",
-    description:
-      "Seminar covering techniques to detect suspicious behavior and prevent incidents early.",
-    images: ["/assets/portfolio/2022/seminar2.png"],
-    kind: "seminar",
-  },
-  {
-    id: 12,
-    date: "2022-03-25",
-    name: "Radio Communication & Command Training",
-    description:
-      "Trained field officers on effective radio use, codes, and coordination protocol.",
-    images: ["/assets/portfolio/2022/training2.png"],
-    kind: "training",
-  },
-
-  // === 2021 ===
-  {
-    id: 13,
-    date: "2021-12-10",
-    name: "Security Risk Assessment Training",
-    description:
-      "Basic to intermediate-level training on identifying and mitigating workplace threats.",
-    images: ["/assets/portfolio/2021/training1.png"],
-    kind: "training",
-  },
-  {
-    id: 14,
-    date: "2021-10-08",
-    name: "Community Safety Awareness Seminar",
-    description:
-      "Introduced basic safety protocols and emergency awareness for residential zones.",
-    images: ["/assets/portfolio/2021/seminar1.png"],
-    kind: "seminar",
-  },
-  {
-    id: 15,
-    date: "2021-07-22",
-    name: "Digital Surveillance Trends Seminar",
-    description:
-      "Seminar on digital surveillance trends in private and public sector monitoring.",
-    images: ["/assets/portfolio/2021/seminar2.png"],
-    kind: "seminar",
-  },
-  {
-    id: 16,
-    date: "2021-03-16",
-    name: "First Aid & Emergency Response Training",
-    description:
-      "Certified training for guards and staff on basic first aid and life-saving actions.",
-    images: ["/assets/portfolio/2021/training2.png"],
-    kind: "training",
-  },
 ];
+
+// {
+//   id: 12,
+//   date: "2022-03-25",
+//   name: "Radio Communication & Command Training",
+//   description:
+//     "Trained field officers on effective radio use, codes, and coordination protocol.",
+//   images: ["/assets/portfolio/2022/training2.png"],
+//   kind: "training",
+// },

@@ -16,6 +16,6 @@ export const teamData = [
     name: "Santo Wicaksono",
     role: "Operational Manager",
   },
-  { image: SanyoWicaksono, name: "Sanyo Wicaksono", role: "Procurement" },
+  { image: SanyoWicaksono, name: "Rizal Eka Phahlefi", role: "Procurement" },
   { image: Hotib, name: "Hotib", role: "Direktur Operasional" },
 ];
