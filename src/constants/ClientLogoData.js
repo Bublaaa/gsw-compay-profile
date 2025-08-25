@@ -7,6 +7,7 @@ import LautanBerlianUtamaMotor from "../assets/client-logo/Lautan-Berlian-Utama-
 import MeganCassiaInternational from "../assets/client-logo/Megan-Cassia-International.webp";
 import PulomasGemalaMisori from "../assets/client-logo/Pulomas-Gemala-Misori.webp";
 import SigmaRekayasaPrima from "../assets/client-logo/Sigma-Rekayasa-Prima.webp";
+import BanHubDIY from "../assets/client-logo/Ban-Hub-DIY.webp";
 
 export const clientLogos = [
   { src: AnugerahAbisatyaAbadi, alt: "AnugerahAbisatyaAbadi" },
@@ -18,4 +19,5 @@ export const clientLogos = [
   { src: MeganCassiaInternational, alt: "MeganCassiaInternational" },
   { src: PulomasGemalaMisori, alt: "PulomasGemalaMisori" },
   { src: SigmaRekayasaPrima, alt: "SigmaRekayasaPrima" },
+  { src: BanHubDIY, alt: "BadanPenghubungDaerahDIY" },
 ];
