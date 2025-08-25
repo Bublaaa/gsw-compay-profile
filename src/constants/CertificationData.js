@@ -3,6 +3,7 @@ import ISO14001 from "../assets/certificates/ISO-14001.pdf";
 import ISO45001 from "../assets/certificates/ISO-45001.pdf";
 import GadaUtama from "../assets/certificates/Gada-Utama.pdf";
 import ABUJAPI from "../assets/certificates/ABUJAPI.pdf";
+import SIO2024 from "../assets/certificates/SIO2024.pdf";
 
 export const certificationList = [
   { title: "ISO 9001", pdfUrl: ISO9001 },
@@ -10,6 +11,7 @@ export const certificationList = [
   { title: "ISO 45001", pdfUrl: ISO45001 },
   { title: "Gada Utama", pdfUrl: GadaUtama },
   { title: "ABUJAPI", pdfUrl: ABUJAPI },
+  { title: "SIO", pdfUrl: SIO2024 },
   // { title: "APSI" },
   // { title: "APSI" },s
   // { title: "Intelijen" },
