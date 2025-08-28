@@ -7,6 +7,17 @@ import LatihanPemadamanKebakaran6 from "../assets/portfolio/2025/LatihanPemadama
 import LatihanPemadamanKebakaran7 from "../assets/portfolio/2025/LatihanPemadamanKebakaran7.webp";
 import LatihanPemadamanKebakaran8 from "../assets/portfolio/2025/LatihanPemadamanKebakaran8.webp";
 
+import EvaluasiTugasSatuanPengamananTasikmalaya1 from "../assets/portfolio/2025/EvaluasiTugasSatuanPengamananTasikmalaya1.webp";
+import EvaluasiTugasSatuanPengamananTasikmalaya2 from "../assets/portfolio/2025/EvaluasiTugasSatuanPengamananTasikmalaya2.webp";
+import EvaluasiTugasSatuanPengamananTasikmalaya3 from "../assets/portfolio/2025/EvaluasiTugasSatuanPengamananTasikmalaya3.webp";
+import EvaluasiTugasSatuanPengamananTasikmalaya4 from "../assets/portfolio/2025/EvaluasiTugasSatuanPengamananTasikmalaya4.webp";
+
+import PembinaanSecuritydiSigmaPrimaRekayasa1 from "../assets/portfolio/2025/PembinaanSecuritydiSigmaPrimaRekayasa1.webp";
+import PembinaanSecuritydiSigmaPrimaRekayasa2 from "../assets/portfolio/2025/PembinaanSecuritydiSigmaPrimaRekayasa2.webp";
+import PembinaanSecuritydiSigmaPrimaRekayasa3 from "../assets/portfolio/2025/PembinaanSecuritydiSigmaPrimaRekayasa3.webp";
+import PembinaanSecuritydiSigmaPrimaRekayasa4 from "../assets/portfolio/2025/PembinaanSecuritydiSigmaPrimaRekayasa4.webp";
+import PembinaanSecuritydiSigmaPrimaRekayasa5 from "../assets/portfolio/2025/PembinaanSecuritydiSigmaPrimaRekayasa5.webp";
+
 import AuditPoldaMetro1 from "../assets/portfolio/2024/AuditPoldaMetro1.webp";
 import AuditPoldaMetro2 from "../assets/portfolio/2024/AuditPoldaMetro2.webp";
 import AuditPoldaMetro3 from "../assets/portfolio/2024/AuditPoldaMetro3.webp";
@@ -18,6 +29,13 @@ import Rakornas4 from "../assets/portfolio/2022/Rakornas4.webp";
 import Rakornas5 from "../assets/portfolio/2022/Rakornas5.webp";
 import Rakornas6 from "../assets/portfolio/2022/Rakornas6.webp";
 
+import Rakornas2_1 from "../assets/portfolio/2022/Rakornas2-1.webp";
+import Rakornas2_2 from "../assets/portfolio/2022/Rakornas2-2.webp";
+import Rakornas2_3 from "../assets/portfolio/2022/Rakornas2-3.webp";
+import Rakornas2_4 from "../assets/portfolio/2022/Rakornas2-4.webp";
+import Rakornas2_5 from "../assets/portfolio/2022/Rakornas2-5.webp";
+import Rakornas2_6 from "../assets/portfolio/2022/Rakornas2-6.webp";
+
 import BintekPPN1 from "../assets/portfolio/2023/BintekPPN1.webp";
 import BintekPPN2 from "../assets/portfolio/2023/BintekPPN2.webp";
 import BintekPPN3 from "../assets/portfolio/2023/BintekPPN3.webp";
@@ -25,6 +43,12 @@ import BintekPPN4 from "../assets/portfolio/2023/BintekPPN4.webp";
 import BintekPPN5 from "../assets/portfolio/2023/BintekPPN5.webp";
 import BintekPPN6 from "../assets/portfolio/2023/BintekPPN6.webp";
 import BintekPPN7 from "../assets/portfolio/2023/BintekPPN7.webp";
+
+import PenyuluhanDanPenggerakP4GN1 from "../assets/portfolio/2023/PenyuluhanDanPenggerakP4GN1.webp";
+import PenyuluhanDanPenggerakP4GN2 from "../assets/portfolio/2023/PenyuluhanDanPenggerakP4GN2.webp";
+import PenyuluhanDanPenggerakP4GN3 from "../assets/portfolio/2023/PenyuluhanDanPenggerakP4GN3.webp";
+import PenyuluhanDanPenggerakP4GN4 from "../assets/portfolio/2023/PenyuluhanDanPenggerakP4GN4.webp";
+import PenyuluhanDanPenggerakP4GN5 from "../assets/portfolio/2023/PenyuluhanDanPenggerakP4GN5.webp";
 
 import SafeguardingofMajorEvents1 from "../assets/portfolio/2023/SafeguardingofMajorEvents1.webp";
 import SafeguardingofMajorEvents2 from "../assets/portfolio/2023/SafeguardingofMajorEvents2.webp";
@@ -58,18 +82,69 @@ import KunjunganClient2 from "../assets/portfolio/2025/KunjunganClient2.webp";
 import KunjunganClient3 from "../assets/portfolio/2025/KunjunganClient3.webp";
 import KunjunganClient4 from "../assets/portfolio/2025/KunjunganClient4.webp";
 
-// import PembinaanTeknisDasardanIntelejen1 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen1.webp";
 // import PembinaanTeknisDasardanIntelejen2 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen2.webp";
+// import PembinaanTeknisDasardanIntelejen1 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen1.webp";
 // import PembinaanTeknisDasardanIntelejen3 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen3.webp";
 // import PembinaanTeknisDasardanIntelejen4 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen4.webp";
 // import PembinaanTeknisDasardanIntelejen5 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen5.webp";
 // import PembinaanTeknisDasardanIntelejen6 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen6.webp";
 // import PembinaanTeknisDasardanIntelejen7 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen7.webp";
 
+import UjiKompetensiBNSP1 from "../assets/portfolio/2021/UjiKompetensiBNSP1.webp";
+import UjiKompetensiBNSP2 from "../assets/portfolio/2021/UjiKompetensiBNSP2.webp";
+import UjiKompetensiBNSP3 from "../assets/portfolio/2021/UjiKompetensiBNSP3.webp";
+import UjiKompetensiBNSP4 from "../assets/portfolio/2021/UjiKompetensiBNSP4.webp";
+import UjiKompetensiBNSP5 from "../assets/portfolio/2021/UjiKompetensiBNSP5.webp";
+import UjiKompetensiBNSP6 from "../assets/portfolio/2021/UjiKompetensiBNSP6.webp";
+
 export const portfolioData = [
-  // === 2024 ===
+  //** ===== 2025 ===== */
   {
-    id: 7,
+    id: 13,
+    date: "2025-07-09",
+    name: "Pembinaan Security di  SIGMA PRIMA REKAYASA",
+    description:
+      "A security development program at SIGMA PRIMA REKAYASA aimed at improving discipline, skills, and professionalism of security personnel.",
+    images: [
+      PembinaanSecuritydiSigmaPrimaRekayasa1,
+      PembinaanSecuritydiSigmaPrimaRekayasa2,
+      PembinaanSecuritydiSigmaPrimaRekayasa3,
+      PembinaanSecuritydiSigmaPrimaRekayasa4,
+      PembinaanSecuritydiSigmaPrimaRekayasa5,
+    ],
+    kind: "training",
+  },
+  {
+    id: 12,
+    date: "2025-04-19",
+    name: "Kunjungan Client",
+    description:
+      "A client visit conducted to audit the deployed security personnel, ensuring their performance, compliance, and suitability for assigned duties.",
+    images: [
+      KunjunganClient1,
+      KunjunganClient2,
+      KunjunganClient3,
+      KunjunganClient4,
+    ],
+    kind: "audit",
+  },
+
+  {
+    id: 11,
+    date: "2025-01-20",
+    name: "Evaluasi Tugas Satuan Pengamanan di Tasikmalaya",
+    description:
+      "A fire drill to train participants in extinguisher use, evacuation, and safety awareness, enhancing preparedness and confidence in emergencies.",
+    images: [
+      EvaluasiTugasSatuanPengamananTasikmalaya1,
+      EvaluasiTugasSatuanPengamananTasikmalaya2,
+      EvaluasiTugasSatuanPengamananTasikmalaya3,
+      EvaluasiTugasSatuanPengamananTasikmalaya4,
+    ],
+    kind: "evaluation",
+  },
+  {
+    id: 10,
     date: "2025-01-18",
     name: "Latihan Pemadaman Kebakaran",
     description:
@@ -86,40 +161,9 @@ export const portfolioData = [
     ],
     kind: "training",
   },
-  // === 2023 ===
+  //** ===== 2024 ===== */
   {
-    id: 6,
-    date: "2023-02-06",
-    name: "Bimbingan Teknis Sistem Manajemen Pengamanan, Security Awareness, Evaluasi Kinerja BKO TNI & Internalisasi AKHLAK PT Pertamina Patra Niaga",
-    description:
-      "A technical guidance program covering the Security Management System, security awareness, performance evaluation of assigned military personnel (BKO TNI), and the internalization of AKHLAK values at PT Pertamina Patra Niaga.",
-    images: [
-      BintekPPN1,
-      BintekPPN2,
-      BintekPPN3,
-      BintekPPN4,
-      BintekPPN5,
-      BintekPPN6,
-      BintekPPN7,
-    ],
-    kind: "seminar",
-  },
-  {
-    id: 5,
-    date: "2025-04-19",
-    name: "Kunjungan Client",
-    description:
-      "A client visit conducted to audit the deployed security personnel, ensuring their performance, compliance, and suitability for assigned duties.",
-    images: [
-      KunjunganClient1,
-      KunjunganClient2,
-      KunjunganClient3,
-      KunjunganClient4,
-    ],
-    kind: "audit",
-  },
-  {
-    id: 4,
+    id: 9,
     date: "2024-03-28",
     name: "Audit Polda Metro Jaya",
     description:
@@ -127,8 +171,10 @@ export const portfolioData = [
     images: [AuditPoldaMetro1, AuditPoldaMetro2, AuditPoldaMetro3],
     kind: "audit",
   },
+  //** ===== 2023 ===== */
+
   {
-    id: 3,
+    id: 8,
     date: "2023-10-20",
     name: "Seminar Radikalisme dan Terorisme",
     description:
@@ -147,7 +193,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
-    id: 3,
+    id: 7,
     date: "2023-10-20",
     name: 'Seminar Security "Effective Management Safeguarding of Major Events"',
     description:
@@ -161,7 +207,22 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
-    id: 3,
+    id: 6,
+    date: "2023-09-20",
+    name: "Penyuluhan dan Penggerak P4GN",
+    description:
+      "An outreach and advocacy program for P4GN, promoting drug abuse prevention, eradication, and awareness to strengthen community resilience against narcotics.",
+    images: [
+      PenyuluhanDanPenggerakP4GN1,
+      PenyuluhanDanPenggerakP4GN2,
+      PenyuluhanDanPenggerakP4GN4,
+      PenyuluhanDanPenggerakP4GN5,
+      PenyuluhanDanPenggerakP4GN3,
+    ],
+    kind: "training",
+  },
+  {
+    id: 5,
     date: "2023-08-31",
     name: 'Security Forum - "Perlindungan Infrastruktur dan Penggunaan Teknologi Identifikasi Dalam Keamanan Pemilu"',
     description:
@@ -170,7 +231,7 @@ export const portfolioData = [
     kind: "seminar",
   },
   {
-    id: 2,
+    id: 4,
     date: "2023-03-12",
     name: "Program Capability Security SEBUSE (Sehat Bugar Senang)",
     description:
@@ -187,13 +248,64 @@ export const portfolioData = [
     kind: "training",
   },
   {
-    id: 1,
+    id: 3,
+    date: "2023-02-06",
+    name: "Bimbingan Teknis Sistem Manajemen Pengamanan, Security Awareness, Evaluasi Kinerja BKO TNI & Internalisasi AKHLAK PT Pertamina Patra Niaga",
+    description:
+      "A technical guidance program covering the Security Management System, security awareness, performance evaluation of assigned military personnel (BKO TNI), and the internalization of AKHLAK values at PT Pertamina Patra Niaga.",
+    images: [
+      BintekPPN1,
+      BintekPPN2,
+      BintekPPN3,
+      BintekPPN4,
+      BintekPPN5,
+      BintekPPN6,
+      BintekPPN7,
+    ],
+    kind: "seminar",
+  },
+  //** ===== 2022 ===== */
+  {
+    id: 2,
     date: "2022-11-02",
     name: "Rapat Koordinasi Nasional Asosiasi Profesi Satpam Indonesia",
     description:
       "A national coordination meeting of the Indonesian Security Profession Association to align strategies and strengthen collaboration.",
     images: [Rakornas1, Rakornas2, Rakornas3, Rakornas4, Rakornas5, Rakornas6],
     kind: "seminar",
+  },
+  {
+    id: 1,
+    date: "2022-01-18",
+    name: "Rapat Koordinasi Nasional Asosiasi Profesi Satpam Indonesia di Surabaya",
+    description:
+      "A national coordination meeting of the Indonesian Security Profession Association to align strategies and strengthen collaboration.",
+    images: [
+      Rakornas2_1,
+      Rakornas2_2,
+      Rakornas2_3,
+      Rakornas2_4,
+      Rakornas2_5,
+      Rakornas2_6,
+    ],
+    kind: "seminar",
+  },
+  //** ===== 2021 ===== */
+  {
+    id: 0,
+    date: "2021-03-31",
+    name: " Uji Kompetensi BNSP Gada Utama",
+    description:
+      "A professional competency assessment by BNSP for the Gada Utama certification, evaluating leadership, management skills, and qualifications of security managers.",
+    images: [
+      UjiKompetensiBNSP1,
+      UjiKompetensiBNSP2,
+      UjiKompetensiBNSP3,
+      UjiKompetensiBNSP4,
+      UjiKompetensiBNSP5,
+      UjiKompetensiBNSP6,
+    ],
+    kind: "certification",
   },
 ];
 

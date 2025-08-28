@@ -21,7 +21,7 @@ const CertificateCard = ({ title, index, pdfUrl }) => {
     >
       <div className="flex flex-col h-full border border-2 border-white-shadow p-1 pr-3 rounded-lg justify-between">
         <LucideIcons.CircleCheckBig className="w-15 h-15 text-accent/30 group-hover:text-accent" />
-        <h5 className="text-accent/100 text-end">{title}</h5>
+        <h5 className="text-accent/100 text-end pt-2">{title}</h5>
       </div>
     </motion.div>
   );
