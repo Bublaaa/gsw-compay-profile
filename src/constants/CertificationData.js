@@ -5,7 +5,7 @@ import GadaUtama from "../assets/certificates/Gada-Utama.pdf";
 import ABUJAPI from "../assets/certificates/ABUJAPI.pdf";
 import SIO2024 from "../assets/certificates/SIO2024.pdf";
 import BNSP from "../assets/certificates/KompetensiTrainingofTrainerBNSP.pdf";
-import DasarBintara from "../assets/certificates/DasarBintara.pdf";
+import SertifikatK3 from "../assets/certificates/SertifikatK3.pdf";
 import P4GN from "../assets/certificates/Penyuluh&PenggerakP4GN.pdf";
 
 export const certificationList = [
@@ -16,6 +16,6 @@ export const certificationList = [
   { title: "ABUJAPI", pdfUrl: ABUJAPI },
   { title: "SIO", pdfUrl: SIO2024 },
   { title: "Kompetensi Training of Trainer BNSP", pdfUrl: BNSP },
-  { title: "Dasar Bintara Intelijen Angkatan XLVI", pdfUrl: DasarBintara },
+  { title: "K3", pdfUrl: SertifikatK3 },
   { title: "Penyuluh & Penggerak P4GN", pdfUrl: P4GN },
 ];
