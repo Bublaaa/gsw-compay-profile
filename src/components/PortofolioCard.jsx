@@ -35,6 +35,8 @@ const PortofolioCard = ({
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           onError={handleImageError}
           className="rounded-md"
         />

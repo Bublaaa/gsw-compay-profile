@@ -82,14 +82,6 @@ import KunjunganClient2 from "../assets/portfolio/2025/KunjunganClient2.webp";
 import KunjunganClient3 from "../assets/portfolio/2025/KunjunganClient3.webp";
 import KunjunganClient4 from "../assets/portfolio/2025/KunjunganClient4.webp";
 
-// import PembinaanTeknisDasardanIntelejen2 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen2.webp";
-// import PembinaanTeknisDasardanIntelejen1 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen1.webp";
-// import PembinaanTeknisDasardanIntelejen3 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen3.webp";
-// import PembinaanTeknisDasardanIntelejen4 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen4.webp";
-// import PembinaanTeknisDasardanIntelejen5 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen5.webp";
-// import PembinaanTeknisDasardanIntelejen6 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen6.webp";
-// import PembinaanTeknisDasardanIntelejen7 from "../assets/portfolio/2022/PembinaanTeknisDasardanIntelejen7.webp";
-
 import UjiKompetensiBNSP1 from "../assets/portfolio/2021/UjiKompetensiBNSP1.webp";
 import UjiKompetensiBNSP2 from "../assets/portfolio/2021/UjiKompetensiBNSP2.webp";
 import UjiKompetensiBNSP3 from "../assets/portfolio/2021/UjiKompetensiBNSP3.webp";

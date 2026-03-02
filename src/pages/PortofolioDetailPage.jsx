@@ -79,6 +79,8 @@ const PortofolioDetailPage = () => {
                   key={index}
                   src={img}
                   onError={handleImageError}
+                  loading="lazy"
+                  decoding="async"
                   alt={`Portfolio ${index}`}
                   className={`object-cover w-full h-full rounded col-span-2 row-span-2`}
                 />
