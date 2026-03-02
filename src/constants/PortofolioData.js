@@ -97,7 +97,62 @@ import UjiKompetensiBNSP4 from "../assets/portfolio/2021/UjiKompetensiBNSP4.webp
 import UjiKompetensiBNSP5 from "../assets/portfolio/2021/UjiKompetensiBNSP5.webp";
 import UjiKompetensiBNSP6 from "../assets/portfolio/2021/UjiKompetensiBNSP6.webp";
 
+import SosialisasiSecurityAwareness1 from "../assets/portfolio/2026/SosialisasiSecurityAwareness1.webp";
+import SosialisasiSecurityAwareness2 from "../assets/portfolio/2026/SosialisasiSecurityAwareness2.webp";
+import SosialisasiSecurityAwareness3 from "../assets/portfolio/2026/SosialisasiSecurityAwareness3.webp";
+import SosialisasiSecurityAwareness4 from "../assets/portfolio/2026/SosialisasiSecurityAwareness4.webp";
+import SosialisasiSecurityAwareness5 from "../assets/portfolio/2026/SosialisasiSecurityAwareness5.webp";
+import SosialisasiSecurityAwareness6 from "../assets/portfolio/2026/SosialisasiSecurityAwareness6.webp";
+
+import FireSafetyTrainingKampusArlindoGroup1 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup1.webp";
+import FireSafetyTrainingKampusArlindoGroup2 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup2.webp";
+import FireSafetyTrainingKampusArlindoGroup3 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup3.webp";
+import FireSafetyTrainingKampusArlindoGroup4 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup4.webp";
+import FireSafetyTrainingKampusArlindoGroup5 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup5.webp";
+import FireSafetyTrainingKampusArlindoGroup6 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup6.webp";
+import FireSafetyTrainingKampusArlindoGroup7 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup7.webp";
+import FireSafetyTrainingKampusArlindoGroup8 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup8.webp";
+import FireSafetyTrainingKampusArlindoGroup9 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup9.webp";
+import FireSafetyTrainingKampusArlindoGroup10 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup10.webp";
+
 export const portfolioData = [
+  //* ===== 2026 ===== */
+  {
+    id: 15,
+    date: "2026-01-31",
+    name: "Sosialisasi Security Awareness",
+    description:
+      "A security awareness socialization program aimed at educating employees about security best practices, potential threats, and fostering a culture of vigilance and responsibility within the organization.",
+    images: [
+      SosialisasiSecurityAwareness1,
+      SosialisasiSecurityAwareness2,
+      SosialisasiSecurityAwareness3,
+      SosialisasiSecurityAwareness4,
+      SosialisasiSecurityAwareness5,
+      SosialisasiSecurityAwareness6,
+    ],
+    kind: "seminar",
+  },
+  {
+    id: 14,
+    date: "2026-01-24",
+    name: "Fire Safety Training Kampus PT. ARLINDO GROUP",
+    description:
+      "A fire safety training program aimed at educating employees about fire prevention, evacuation procedures, and emergency response protocols.",
+    images: [
+      FireSafetyTrainingKampusArlindoGroup1,
+      FireSafetyTrainingKampusArlindoGroup2,
+      FireSafetyTrainingKampusArlindoGroup3,
+      FireSafetyTrainingKampusArlindoGroup4,
+      FireSafetyTrainingKampusArlindoGroup5,
+      FireSafetyTrainingKampusArlindoGroup6,
+      FireSafetyTrainingKampusArlindoGroup7,
+      FireSafetyTrainingKampusArlindoGroup8,
+      FireSafetyTrainingKampusArlindoGroup9,
+      FireSafetyTrainingKampusArlindoGroup10,
+    ],
+    kind: "training",
+  },
   //** ===== 2025 ===== */
   {
     id: 13,
