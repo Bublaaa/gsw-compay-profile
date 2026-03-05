@@ -7,8 +7,8 @@ import { div } from "framer-motion/client";
 const PortofolioDetailPage = () => {
   const { id } = useParams();
   const portofolio = portfolioData.find((p) => p.id == id);
-  const isFirst = id == 1;
-  const isLast = id == portfolioData.length;
+  const isFirst = id == 0;
+  const isLast = id == portfolioData.length - 1;
 
   const handleImageError = (e) => {
     e.target.onerror = null;

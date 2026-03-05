@@ -4,7 +4,6 @@ import { portfolioData } from "../constants/PortofolioData";
 import { footerData } from "../constants/FooterData";
 import PortofolioCard from "../components/PortofolioCard";
 import FooterSection from "../sections/FooterSection";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const groupByYear = (data) => {

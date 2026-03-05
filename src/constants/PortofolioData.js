@@ -95,6 +95,9 @@ import SosialisasiSecurityAwareness3 from "../assets/portfolio/2026/SosialisasiS
 import SosialisasiSecurityAwareness4 from "../assets/portfolio/2026/SosialisasiSecurityAwareness4.webp";
 import SosialisasiSecurityAwareness5 from "../assets/portfolio/2026/SosialisasiSecurityAwareness5.webp";
 import SosialisasiSecurityAwareness6 from "../assets/portfolio/2026/SosialisasiSecurityAwareness6.webp";
+import SosialisasiSecurityAwareness7 from "../assets/portfolio/2026/SosialisasiSecurityAwareness7.webp";
+import SosialisasiSecurityAwareness8 from "../assets/portfolio/2026/SosialisasiSecurityAwareness8.webp";
+import SosialisasiSecurityAwareness9 from "../assets/portfolio/2026/SosialisasiSecurityAwareness9.webp";
 
 import FireSafetyTrainingKampusArlindoGroup1 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup1.webp";
 import FireSafetyTrainingKampusArlindoGroup2 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup2.webp";
@@ -106,6 +109,8 @@ import FireSafetyTrainingKampusArlindoGroup7 from "../assets/portfolio/2026/Fire
 import FireSafetyTrainingKampusArlindoGroup8 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup8.webp";
 import FireSafetyTrainingKampusArlindoGroup9 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup9.webp";
 import FireSafetyTrainingKampusArlindoGroup10 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup10.webp";
+import FireSafetyTrainingKampusArlindoGroup11 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup11.webp";
+import FireSafetyTrainingKampusArlindoGroup12 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup12.webp";
 
 export const portfolioData = [
   //* ===== 2026 ===== */
@@ -122,6 +127,9 @@ export const portfolioData = [
       SosialisasiSecurityAwareness4,
       SosialisasiSecurityAwareness5,
       SosialisasiSecurityAwareness6,
+      SosialisasiSecurityAwareness7,
+      SosialisasiSecurityAwareness8,
+      SosialisasiSecurityAwareness9,
     ],
     kind: "seminar",
   },
@@ -142,6 +150,8 @@ export const portfolioData = [
       FireSafetyTrainingKampusArlindoGroup8,
       FireSafetyTrainingKampusArlindoGroup9,
       FireSafetyTrainingKampusArlindoGroup10,
+      FireSafetyTrainingKampusArlindoGroup11,
+      FireSafetyTrainingKampusArlindoGroup12,
     ],
     kind: "training",
   },
