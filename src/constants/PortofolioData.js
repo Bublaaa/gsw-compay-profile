@@ -112,8 +112,29 @@ import FireSafetyTrainingKampusArlindoGroup10 from "../assets/portfolio/2026/Fir
 import FireSafetyTrainingKampusArlindoGroup11 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup11.webp";
 import FireSafetyTrainingKampusArlindoGroup12 from "../assets/portfolio/2026/FireSafetyTrainingKampusArlindoGroup12.webp";
 
+import KegiatanPeningkatanKebugarandanLatihanPBB1 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB1.webp";
+import KegiatanPeningkatanKebugarandanLatihanPBB2 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB2.webp";
+import KegiatanPeningkatanKebugarandanLatihanPBB3 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB3.webp";
+import KegiatanPeningkatanKebugarandanLatihanPBB4 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB4.webp";
+import KegiatanPeningkatanKebugarandanLatihanPBB5 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB5.webp";
+
 export const portfolioData = [
   //* ===== 2026 ===== */
+  {
+    id: 16,
+    date: "2026-02-28",
+    name: "Kegiatan Peningkatan Kebugaran dan Latihan PBB",
+    description:
+      "A fitness improvement and PBB (Peraturan Baris Berbaris) training program designed to enhance physical fitness, discipline, and teamwork among security personnel through structured exercises and marching drills.",
+    images: [
+      KegiatanPeningkatanKebugarandanLatihanPBB1,
+      KegiatanPeningkatanKebugarandanLatihanPBB2,
+      KegiatanPeningkatanKebugarandanLatihanPBB3,
+      KegiatanPeningkatanKebugarandanLatihanPBB4,
+      KegiatanPeningkatanKebugarandanLatihanPBB5,
+    ],
+    kind: "training",
+  },
   {
     id: 15,
     date: "2026-01-31",
