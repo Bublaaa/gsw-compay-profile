@@ -20,7 +20,7 @@ const FooterSection = ({ footerData }) => {
             </div>
 
             {/* Contact links */}
-            <div className="w-full space-y-2 md:pl-50">
+            {/* <div className="w-full space-y-2 md:pl-50">
               <a
                 href={footerData.phoneLink}
                 className="block text-sm text-white hover:text-light-accent transition"
@@ -45,7 +45,7 @@ const FooterSection = ({ footerData }) => {
               >
                 support@gsw.com
               </a>
-            </div>
+            </div> */}
             {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-6"></div> */}
           </div>
 

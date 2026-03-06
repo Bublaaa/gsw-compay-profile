@@ -8,6 +8,7 @@ import MeganCassiaInternational from "../assets/client-logo/Megan-Cassia-Interna
 import PulomasGemalaMisori from "../assets/client-logo/Pulomas-Gemala-Misori.webp";
 import SigmaRekayasaPrima from "../assets/client-logo/Sigma-Rekayasa-Prima.webp";
 import BanHubDIY from "../assets/client-logo/Ban-Hub-DIY.webp";
+import STIEArlindo from "../assets/client-logo/STIEArlindo.webp";
 
 export const clientLogos = [
   { src: AnugerahAbisatyaAbadi, alt: "AnugerahAbisatyaAbadi" },
@@ -20,4 +21,5 @@ export const clientLogos = [
   { src: PulomasGemalaMisori, alt: "PulomasGemalaMisori" },
   { src: SigmaRekayasaPrima, alt: "SigmaRekayasaPrima" },
   { src: BanHubDIY, alt: "BadanPenghubungDaerahDIY" },
+  { src: STIEArlindo, alt: "STIE Arlindo" },
 ];
