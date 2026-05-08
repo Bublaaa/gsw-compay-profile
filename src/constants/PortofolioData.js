@@ -118,8 +118,56 @@ import KegiatanPeningkatanKebugarandanLatihanPBB3 from "../assets/portfolio/2026
 import KegiatanPeningkatanKebugarandanLatihanPBB4 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB4.webp";
 import KegiatanPeningkatanKebugarandanLatihanPBB5 from "../assets/portfolio/2026/KegiatanPeningkatanKebugarandanLatihanPBB5.webp";
 
+import SafetyTrainingBCI1 from "../assets/portfolio/2026/SafetyTrainingBCI1.webp";
+import SafetyTrainingBCI2 from "../assets/portfolio/2026/SafetyTrainingBCI2.webp";
+import SafetyTrainingBCI3 from "../assets/portfolio/2026/SafetyTrainingBCI3.webp";
+import SafetyTrainingBCI4 from "../assets/portfolio/2026/SafetyTrainingBCI4.webp";
+import SafetyTrainingBCI5 from "../assets/portfolio/2026/SafetyTrainingBCI5.webp";
+import SafetyTrainingBCI6 from "../assets/portfolio/2026/SafetyTrainingBCI6.webp";
+import SafetyTrainingBCI7 from "../assets/portfolio/2026/SafetyTrainingBCI7.webp";
+import SafetyTrainingBCI8 from "../assets/portfolio/2026/SafetyTrainingBCI8.webp";
+import SafetyTrainingBCI9 from "../assets/portfolio/2026/SafetyTrainingBCI9.webp";
+import SafetyTrainingBCI10 from "../assets/portfolio/2026/SafetyTrainingBCI10.webp";
+import SafetyTrainingBCI11 from "../assets/portfolio/2026/SafetyTrainingBCI11.webp";
+import SafetyTrainingBCI12 from "../assets/portfolio/2026/SafetyTrainingBCI12.webp";
+import SafetyTrainingBCI13 from "../assets/portfolio/2026/SafetyTrainingBCI13.webp";
+import SafetyTrainingBCI14 from "../assets/portfolio/2026/SafetyTrainingBCI14.webp";
+import SafetyTrainingBCI15 from "../assets/portfolio/2026/SafetyTrainingBCI15.webp";
+import SafetyTrainingBCI16 from "../assets/portfolio/2026/SafetyTrainingBCI16.webp";
+import SafetyTrainingBCI17 from "../assets/portfolio/2026/SafetyTrainingBCI17.webp";
+import SafetyTrainingBCI18 from "../assets/portfolio/2026/SafetyTrainingBCI18.webp";
+import { desc } from "framer-motion/client";
+
 export const portfolioData = [
   //* ===== 2026 ===== */
+  {
+    id: 17,
+    date: "2026-05-07",
+    name: "Safety Training di BCI",
+    description:
+      "A comprehensive safety training program conducted at BCI to educate participants on hazard identification and emergency response procedures.",
+    images: [
+      SafetyTrainingBCI1,
+      SafetyTrainingBCI2,
+      SafetyTrainingBCI3,
+      SafetyTrainingBCI4,
+      SafetyTrainingBCI5,
+      SafetyTrainingBCI6,
+      SafetyTrainingBCI7,
+      SafetyTrainingBCI8,
+      SafetyTrainingBCI9,
+      SafetyTrainingBCI10,
+      SafetyTrainingBCI11,
+      SafetyTrainingBCI12,
+      SafetyTrainingBCI13,
+      SafetyTrainingBCI14,
+      SafetyTrainingBCI15,
+      SafetyTrainingBCI16,
+      SafetyTrainingBCI17,
+      SafetyTrainingBCI18,
+    ],
+    kind: "training",
+  },
   {
     id: 16,
     date: "2026-02-28",
