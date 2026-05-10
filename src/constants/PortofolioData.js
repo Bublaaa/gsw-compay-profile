@@ -136,10 +136,32 @@ import SafetyTrainingBCI15 from "../assets/portfolio/2026/SafetyTrainingBCI15.we
 import SafetyTrainingBCI16 from "../assets/portfolio/2026/SafetyTrainingBCI16.webp";
 import SafetyTrainingBCI17 from "../assets/portfolio/2026/SafetyTrainingBCI17.webp";
 import SafetyTrainingBCI18 from "../assets/portfolio/2026/SafetyTrainingBCI18.webp";
+
+import RefreshmentPulomasPasadenia1 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia1.webp";
+import RefreshmentPulomasPasadenia2 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia2.webp";
+import RefreshmentPulomasPasadenia3 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia3.webp";
+import RefreshmentPulomasPasadenia4 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia4.webp";
+import RefreshmentPulomasPasadenia5 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia5.webp";
+
 import { desc } from "framer-motion/client";
 
 export const portfolioData = [
   //* ===== 2026 ===== */
+  {
+    id: 18,
+    date: "2026-06-15",
+    name: "Refreshment Training di Pulomas Pasadenia",
+    description:
+      "A refreshment training program conducted at Pulomas Pasadenia to enhance the skills and knowledge of security personnel, ensuring they stay updated with the latest security practices and protocols.",
+    images: [
+      RefreshmentPulomasPasadenia1,
+      RefreshmentPulomasPasadenia2,
+      RefreshmentPulomasPasadenia3,
+      RefreshmentPulomasPasadenia4,
+      RefreshmentPulomasPasadenia5,
+    ],
+    kind: "training",
+  },
   {
     id: 17,
     date: "2026-05-07",
