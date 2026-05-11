@@ -24,38 +24,21 @@ const ServiceCard = ({
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="relative flex flex-col items-center"
     >
-      {/* DESCRIPTION */}
-
-      <motion.div
-        initial={false}
-        animate={{
-          opacity: isSelected ? 1 : 0,
-          y: isSelected ? 0 : 2,
-        }}
-        transition={{ duration: 0.35 }}
-        className="pointer-events-none absolute -top-24 left-1/2 w-full -translate-x-1/2"
-      >
-        <p className="w-full font-bold text-end leading-relaxed">
-          {description}
-        </p>
-      </motion.div>
-
       {/* BUTTON */}
-
       <button
         type="button"
         onClick={() => setSelectedService(service)}
-        className={`group relative flex w-full flex-col overflow-hidden rounded-2xl border p-8 transition-all duration-300 ${
+        className={`group relative flex w-full flex-col overflow-hidden rounded-2xl border md:p-8 p-5 transition-all duration-300 ${
           isSelected
             ? "scale-105 border-accent bg-accent shadow-2xl"
             : "border-zinc-200 bg-white hover:scale-105 hover:border-red-500 hover:bg-accent-hover"
         }`}
       >
-        <div className="relative z-20 flex flex-col items-center justify-center gap-4 text-center">
-          <div className="rounded-full bg-white/10 p-5">
+        <div className="relative z-20 flex md:flex-col flex-row items-center md:justify-center justify-start gap-4 text-center">
+          <div className="rounded-full bg-white/10 md:p-5 p-2">
             {Icon && (
               <Icon
-                className={`h-10 w-10 transition-colors duration-300 ${
+                className={`md:h-10 md:w-10 w-7 h-7 transition-colors duration-300 ${
                   isSelected
                     ? "text-white"
                     : "text-red-500 group-hover:text-white"
@@ -65,7 +48,7 @@ const ServiceCard = ({
           </div>
 
           <h2
-            className={`text-xl font-semibold transition-colors duration-300 ${
+            className={`text-xl font-semibold transition-colors duration-300 md:text-center text-start ${
               isSelected ? "text-white" : "text-black group-hover:text-white"
             }`}
           >
@@ -92,7 +75,7 @@ const BackgroundCover = ({ selectedService }) => {
           src={activeService.backgroundImage}
           alt=""
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 70 }}
+          animate={{ opacity: 0.5 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
           className="absolute right-0 top-0 w-[45%] max-w-[1000px] min-w-md object-cover"
@@ -104,11 +87,14 @@ const BackgroundCover = ({ selectedService }) => {
 
 const OurServiceSection = () => {
   const [selectedService, setSelectedService] = useState("security");
+  const selectedServiceData = serviceData.find(
+    (item) => item.service === selectedService,
+  );
   return (
     <section id="our-service" className="relative w-full bg-white-shadow">
       <BackgroundCover selectedService={selectedService} />
 
-      <div className="relative flex flex-col z-20 md:max-w-screen-xl w-full min-h-screen md:py-40 py-10 px-5 md:px-10 items-start justify-between mx-auto md:gap-10 gap-5">
+      <div className="relative flex flex-col z-20 md:max-w-screen-xl w-full min-h-screen md:py-40 py-10 px-5 md:px-10 items-start justify-between mx-auto md:gap-3 gap-2">
         <div className="flex flex-col">
           <motion.h4
             variants={fadeIn("right", "spring", 0.1, 1)}
@@ -141,6 +127,18 @@ const OurServiceSection = () => {
             business runs smoothly and securely.
           </motion.p>
         </div>
+
+        <motion.div
+          key={selectedServiceData?.service}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35 }}
+          className="mb-5 w-full"
+        >
+          <p className="mx-auto max-w-2xl text-center font-bold leading-relaxed">
+            {selectedServiceData?.description}
+          </p>
+        </motion.div>
 
         <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-3">
           {serviceData.map((service, index) => (
