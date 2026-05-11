@@ -16,34 +16,10 @@ const HeroSection = () => {
       id="home"
       className="relative overflow-hidden bg-center bg-cover bg-no-repeat w-full min-h-screen"
     >
-      {/* ================= DECORATION LAYERS ================= */}
-
-      {/* Shadow */}
-      <div className="absolute left-1/2 top-[40%] z-10 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-        <img src={shadow} alt="" className="w-[1500px] max-w-none opacity-80" />
-      </div>
-
-      {/* Halo */}
-      <div className="absolute left-1/2 top-[18%] sm:top-[20%] md:top-[24%] lg:top-[20%] z-20 -translate-x-1/2 pointer-events-none">
-        <img
-          src={halo}
-          alt=""
-          className="w-[700px] sm:w-[800px] md:w-[750px] lg:w-[900px] xl:w-[1000px] max-w-none opacity-80"
-        />
-      </div>
-      {/* Shield */}
-      <div className="absolute left-1/2 top-[42%] md:top-[48%] z-20 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-        <img
-          src={shield}
-          alt=""
-          className="w-[500px] sm:w-[520px] md:w-[500px] lg:w-[580px] xl:w-[650px] max-w-none"
-        />
-      </div>
-      {/* White Overlay */}
-      <div className="absolute bottom-1/20 left-1/2 z-30 -translate-x-1/2 pointer-events-none">
-        <img src={whiteOverlay} alt="" className="w-full min-w-[1200px]" />
-      </div>
-
+      <ShadowSVG />
+      <HaloSVG />
+      <ShieldSVG />
+      <WhiteOverlaySVG />
       {/* ================= CONTENT ================= */}
 
       <div className="relative z-40 flex min-h-screen items-center mt-20 justify-center px-4">
@@ -61,7 +37,7 @@ const HeroSection = () => {
             <motion.a
               href="#our-service"
               className="inline-flex items-center justify-center py-3 px-5 text-base font-medium text-white bg-accent rounded-lg hover:bg-accent-hover focus:ring-4 focus:ring-red-100"
-              variants={fadeIn("up", "spring", 0.1, 1.4)}
+              variants={fadeIn("up", "fade", 0.1, 0.5)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
@@ -77,3 +53,43 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+const ShadowSVG = () => {
+  return (
+    <div className="absolute left-1/2 top-[40%] z-10 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      <img src={shadow} alt="" className="w-[1500px] max-w-none opacity-80" />
+    </div>
+  );
+};
+
+const HaloSVG = () => {
+  return (
+    <div className="absolute left-1/2 top-[18%] sm:top-[20%] md:top-[24%] lg:top-[20%] z-20 -translate-x-1/2 pointer-events-none">
+      <img
+        src={halo}
+        alt=""
+        className="w-[700px] sm:w-[800px] md:w-[750px] lg:w-[900px] xl:w-[1000px] max-w-none opacity-80"
+      />
+    </div>
+  );
+};
+
+const ShieldSVG = () => {
+  return (
+    <div className="absolute left-1/2 top-[42%] md:top-[48%] z-20 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      <img
+        src={shield}
+        alt=""
+        className="w-[500px] sm:w-[520px] md:w-[500px] lg:w-[580px] xl:w-[650px] max-w-none"
+      />
+    </div>
+  );
+};
+
+const WhiteOverlaySVG = () => {
+  return (
+    <div className="absolute bottom-1/20 left-1/2 z-30 -translate-x-1/2 pointer-events-none">
+      <img src={whiteOverlay} alt="" className="w-full min-w-[1200px]" />
+    </div>
+  );
+};
