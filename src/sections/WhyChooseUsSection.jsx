@@ -13,11 +13,15 @@ const CertificateCard = ({ title, index, pdfUrl }) => {
   return (
     <motion.div
       onClick={handleOpenPdf}
-      className="flex flex-col bg-white shadow-md text-white-shadow hover:shadow-lg p-2 rounded-lg group cursor-pointer transition-all duration-300"
-      variants={fadeIn("right", "spring", 0.1, (index + 1) * 0.5)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
+      className="group flex cursor-pointer flex-col rounded-lg bg-white p-2 text-white-shadow shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.08,
+        ease: "easeOut",
+      }}
     >
       <div className="flex flex-col h-full border border-2 border-white-shadow p-1 pr-3 rounded-lg justify-between">
         <LucideIcons.CircleCheckBig className="w-15 h-15 text-accent/30 group-hover:text-accent" />
