@@ -9,7 +9,7 @@ const ServiceCard = ({
   Icon,
   index,
   service,
-  description,
+  // description,
   selectedService,
   setSelectedService,
 }) => {

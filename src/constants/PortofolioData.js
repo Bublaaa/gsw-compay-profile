@@ -155,8 +155,39 @@ import SecurityDeploymentOSAVE3 from "../assets/portfolio/2026/SecurityDeploymen
 import SecurityDeploymentOSAVE4 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE4.webp";
 import SecurityDeploymentOSAVE5 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE5.webp";
 
+import PembinaanPeyegaranArlindoNitraPerkasa1 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa1.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa2 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa2.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa3 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa3.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa4 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa4.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa5 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa5.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa6 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa6.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa7 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa7.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa8 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa8.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa9 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa9.webp";
+import PembinaanPeyegaranArlindoNitraPerkasa10 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa10.webp";
+
 export const portfolioData = [
   //* ===== 2026 ===== */
+  {
+    id: 21,
+    date: "2026-11-07",
+    name: "Refreshment at Arlindo Nitra Perkasa",
+    description:
+      "A refreshment program conducted at Arlindo Nitra Perkasa to enhance the skills and knowledge of security personnel, ensuring they stay updated with the latest security practices and protocols.",
+    images: [
+      PembinaanPeyegaranArlindoNitraPerkasa1,
+      PembinaanPeyegaranArlindoNitraPerkasa2,
+      PembinaanPeyegaranArlindoNitraPerkasa3,
+      PembinaanPeyegaranArlindoNitraPerkasa4,
+      PembinaanPeyegaranArlindoNitraPerkasa5,
+      PembinaanPeyegaranArlindoNitraPerkasa6,
+      PembinaanPeyegaranArlindoNitraPerkasa7,
+      PembinaanPeyegaranArlindoNitraPerkasa8,
+      PembinaanPeyegaranArlindoNitraPerkasa9,
+      PembinaanPeyegaranArlindoNitraPerkasa10,
+    ],
+    kind: "training",
+  },
   {
     id: 20,
     date: "2026-11-01",
@@ -170,7 +201,7 @@ export const portfolioData = [
       SecurityDeploymentOSAVE4,
       SecurityDeploymentOSAVE5,
     ],
-    kind: "Deployment",
+    kind: "deployment",
   },
   {
     id: 19,
