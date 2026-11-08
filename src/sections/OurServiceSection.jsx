@@ -1,9 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { fadeIn } from "../utils/motion";
 import { serviceData } from "../constants/ServiceData";
-import { div } from "framer-motion/client";
 
 const ServiceCard = ({
   title,

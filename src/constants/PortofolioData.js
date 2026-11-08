@@ -143,10 +143,50 @@ import RefreshmentPulomasPasadenia3 from "../assets/portfolio/2026/RefreshmentPu
 import RefreshmentPulomasPasadenia4 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia4.webp";
 import RefreshmentPulomasPasadenia5 from "../assets/portfolio/2026/RefreshmentPulomasPasadenia5.webp";
 
-import { desc } from "framer-motion/client";
+import RefreshmentBCI1 from "../assets/portfolio/2026/KegiatanKebugaranBCI1.webp";
+import RefreshmentBCI2 from "../assets/portfolio/2026/KegiatanKebugaranBCI2.webp";
+import RefreshmentBCI3 from "../assets/portfolio/2026/KegiatanKebugaranBCI3.webp";
+import RefreshmentBCI4 from "../assets/portfolio/2026/KegiatanKebugaranBCI4.webp";
+import RefreshmentBCI5 from "../assets/portfolio/2026/KegiatanKebugaranBCI5.webp";
+
+import SecurityDeploymentOSAVE1 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE1.webp";
+import SecurityDeploymentOSAVE2 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE2.webp";
+import SecurityDeploymentOSAVE3 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE3.webp";
+import SecurityDeploymentOSAVE4 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE4.webp";
+import SecurityDeploymentOSAVE5 from "../assets/portfolio/2026/SecurityDeploymentO!SAVE5.webp";
 
 export const portfolioData = [
   //* ===== 2026 ===== */
+  {
+    id: 20,
+    date: "2026-11-01",
+    name: "Security Personnel Deployment at O!SAVE",
+    description:
+      "Deployment of security personnel at O!SAVE to ensure the safety and security of the premises, assets, and personnel, maintaining a secure environment for operations.",
+    images: [
+      SecurityDeploymentOSAVE1,
+      SecurityDeploymentOSAVE2,
+      SecurityDeploymentOSAVE3,
+      SecurityDeploymentOSAVE4,
+      SecurityDeploymentOSAVE5,
+    ],
+    kind: "Deployment",
+  },
+  {
+    id: 19,
+    date: "2026-10-25",
+    name: "Refreshment Training di BCI",
+    description:
+      "A refreshment training program conducted at BCI to enhance the skills and refresh body of security personnel, ensuring they stay healthy and fit to perform their duties effectively.",
+    images: [
+      RefreshmentBCI1,
+      RefreshmentBCI2,
+      RefreshmentBCI3,
+      RefreshmentBCI4,
+      RefreshmentBCI5,
+    ],
+    kind: "training",
+  },
   {
     id: 18,
     date: "2026-06-15",
