@@ -166,10 +166,35 @@ import PembinaanPeyegaranArlindoNitraPerkasa8 from "../assets/portfolio/2026/Pem
 import PembinaanPeyegaranArlindoNitraPerkasa9 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa9.webp";
 import PembinaanPeyegaranArlindoNitraPerkasa10 from "../assets/portfolio/2026/PembinaanPeyegaranArlindoNitraPerkasa10.webp";
 
+import LatihanPemadamKantorPenghubungJojgakarta1 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta1.webp";
+import LatihanPemadamKantorPenghubungJojgakarta2 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta2.webp";
+import LatihanPemadamKantorPenghubungJojgakarta3 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta3.webp";
+import LatihanPemadamKantorPenghubungJojgakarta4 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta4.webp";
+import LatihanPemadamKantorPenghubungJojgakarta5 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta5.webp";
+import LatihanPemadamKantorPenghubungJojgakarta6 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta6.webp";
+import LatihanPemadamKantorPenghubungJojgakarta7 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta7.webp";
+import LatihanPemadamKantorPenghubungJojgakarta8 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta8.webp";
+import LatihanPemadamKantorPenghubungJojgakarta9 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta9.webp";
+import LatihanPemadamKantorPenghubungJojgakarta10 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta10.webp";
+import LatihanPemadamKantorPenghubungJojgakarta11 from "../assets/portfolio/2026/LatihanPemadamKantorPenghubungJojgakarta11.webp";
+
+import DeploymentGKISerpong1 from "../assets/portfolio/2026/DeploymentGKISerpong1.webp";
+import DeploymentGKISerpong2 from "../assets/portfolio/2026/DeploymentGKISerpong2.webp";
+
 export const portfolioData = [
   //* ===== 2026 ===== */
+
   {
-    id: 21,
+    id: 23,
+    date: "2026-11-09",
+    name: "Security Personnel Deployment at GKI Serpong",
+    description:
+      "Deployment of security personnel at GKI Serpong to ensure the safety and security of the premises, assets, and personnel, maintaining a secure environment for operations.",
+    images: [DeploymentGKISerpong2, DeploymentGKISerpong1],
+    kind: "training",
+  },
+  {
+    id: 22,
     date: "2026-11-07",
     name: "Refreshment at Arlindo Nitra Perkasa",
     description:
@@ -189,7 +214,7 @@ export const portfolioData = [
     kind: "training",
   },
   {
-    id: 20,
+    id: 21,
     date: "2026-11-01",
     name: "Security Personnel Deployment at O!SAVE",
     description:
@@ -204,7 +229,7 @@ export const portfolioData = [
     kind: "deployment",
   },
   {
-    id: 19,
+    id: 20,
     date: "2026-10-25",
     name: "Refreshment Training di BCI",
     description:
@@ -215,6 +240,27 @@ export const portfolioData = [
       RefreshmentBCI3,
       RefreshmentBCI4,
       RefreshmentBCI5,
+    ],
+    kind: "training",
+  },
+  {
+    id: 19,
+    date: "2026-07-28",
+    name: "Fire Extinguishing Training with APAR Kantor Penghubung Jogjakarta at TMII",
+    description:
+      "A fire extinguishing training program conducted with APAR Kantor Penghubung Jogjakarta at TMII, aimed at enhancing the skills and preparedness of participants in handling fire emergencies effectively.",
+    images: [
+      LatihanPemadamKantorPenghubungJojgakarta1,
+      LatihanPemadamKantorPenghubungJojgakarta2,
+      LatihanPemadamKantorPenghubungJojgakarta3,
+      LatihanPemadamKantorPenghubungJojgakarta4,
+      LatihanPemadamKantorPenghubungJojgakarta5,
+      LatihanPemadamKantorPenghubungJojgakarta6,
+      LatihanPemadamKantorPenghubungJojgakarta7,
+      LatihanPemadamKantorPenghubungJojgakarta8,
+      LatihanPemadamKantorPenghubungJojgakarta9,
+      LatihanPemadamKantorPenghubungJojgakarta10,
+      LatihanPemadamKantorPenghubungJojgakarta11,
     ],
     kind: "training",
   },

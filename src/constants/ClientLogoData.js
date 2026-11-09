@@ -9,6 +9,9 @@ import PulomasGemalaMisori from "../assets/client-logo/Pulomas-Gemala-Misori.web
 import SigmaRekayasaPrima from "../assets/client-logo/Sigma-Rekayasa-Prima.webp";
 import BanHubDIY from "../assets/client-logo/Ban-Hub-DIY.webp";
 import STIEArlindo from "../assets/client-logo/STIEArlindo.webp";
+import GKI from "../assets/client-logo/GKI.webp";
+import OSAVE from "../assets/client-logo/OSAVE.webp";
+import PerlindoMitraPerkasa from "../assets/client-logo/Perlindo-Mitra-Perkasa.webp";
 
 export const clientLogos = [
   { src: AnugerahAbisatyaAbadi, alt: "AnugerahAbisatyaAbadi" },
@@ -22,4 +25,7 @@ export const clientLogos = [
   { src: SigmaRekayasaPrima, alt: "SigmaRekayasaPrima" },
   { src: BanHubDIY, alt: "BadanPenghubungDaerahDIY" },
   { src: STIEArlindo, alt: "STIE Arlindo" },
+  { src: GKI, alt: "GKI" },
+  { src: OSAVE, alt: "O!SAVE" },
+  { src: PerlindoMitraPerkasa, alt: "Perlindo Mitra Perkasa" },
 ];

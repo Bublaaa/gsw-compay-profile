@@ -18,7 +18,7 @@ const OurClientsSection = () => {
           {clientLogos.map((logo, index) => (
             <motion.a
               key={index}
-              className="w-fit h-fit bg-white rounded-lg"
+              className="w-fit h-fit bg-white rounded-lg my-auto overflow-hidden"
               variants={fadeIn("up", "spring", 0.1, (index + 1) * 0.1)}
               initial="hidden"
               whileInView="show"
